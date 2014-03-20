@@ -1,0 +1,71 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="stylesheet" href="../css/tablesorterblue/style.css" type="text/css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.tablesorter.min.js"></script>
+</head>
+
+<body>
+<a href=".."><b>Voltar</b></a><br>
+<div style="width:500px">
+<div align="right">Atualizado:
+20/03/2014</div>
+<table id="myTable" class="tablesorter">
+  <thead>
+    <tr>
+      <th width="15%">Codigo</th>
+      <th width="35%">Numero do<br>container</th>
+      <th width="25%">Qtde. total<br>do pedido</th>
+      <th width="25%">Qtde. ja separada<br>p/ esse pedido</th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+    <tr>
+    <td>140303</td>
+    <td>--</td>
+    <td>6300</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>140975A/E/L</td>
+    <td>Avisa quando chegar</td>
+    <td>200</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>140975T</td>
+    <td>Sem cont.</td>
+    <td>14400</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>141306</td>
+    <td>Sem cont.</td>
+    <td>4000</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143038</td>
+    <td>--</td>
+    <td>20000</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143038</td>
+    <td>--</td>
+    <td>1000</td>
+    <td>0</td>
+    </tr> 
+  </tbody>
+</table>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $("#myTable").tablesorter();
+  });
+</script>
+
