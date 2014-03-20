@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+import os
 from datetime import datetime
 import odf2array as odsreader
 
@@ -8,6 +9,7 @@ import odf2array as odsreader
 # and odf2array by marco83
 # http://www.marco83.com/work/173/read-an-ods-file-with-python-and-odfpy/
 
+os.chdir("c:/Users/Heitor/Desktop/emacs-24.3/bin/")
 # chegando da fabrica
 chegandofile = odsreader.ODSReader("N:/CHEGANDO.ods")
 chegandotable = chegandofile.getSheet("Planilha1")
