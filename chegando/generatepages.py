@@ -25,6 +25,7 @@ commonheader = """
 </head>
 
 <body>
+<center>
 <a href=".."><b>Voltar</b></a><br>
 <div style="width:500px">
 <div align="right">Atualizado: 
@@ -34,6 +35,7 @@ commonfooter = """
   </tbody>
 </table>
 </div>
+</center>
 
 <script>
   $(document).ready(function() {
