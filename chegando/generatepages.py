@@ -38,8 +38,7 @@ commonfooter = """
 </center>
 """
 
-aguardarfooter = commonfooter +
-"""
+aguardarfooter = commonfooter + """
 <script>
   $(document).ready(function() {
     $("#myTable").tablesorter({ sortList: [[0,0]] });
@@ -47,8 +46,7 @@ aguardarfooter = commonfooter +
 </script>
 """
 
-chegandofooter = commonfooter +
-"""
+chegandofooter = commonfooter + """
 <script> 
   $(document).ready(function() {
     $("#myTable").tablesorter({ sortList: [[1,0], [0,0]] });
