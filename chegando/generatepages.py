@@ -36,10 +36,22 @@ commonfooter = """
 </table>
 </div>
 </center>
+"""
 
+aguardarfooter = commonfooter +
+"""
 <script>
   $(document).ready(function() {
     $("#myTable").tablesorter({ sortList: [[0,0]] });
+  });
+</script>
+"""
+
+chegandofooter = commonfooter +
+"""
+<script>
+  $(document).ready(function() {
+    $("#myTable").tablesorter({ sortList: [[1,0], [0,0]] });
   });
 </script>
 """
@@ -70,7 +82,7 @@ for row in chegandotable[1:]:
     <td>%s</td>
     </tr>""" % tuple(row[1:])
     
-print("%s %s %s" % (chegandoheader, chegandobody, commonfooter),
+print("%s %s %s" % (chegandoheader, chegandobody, chegandofooter),
       file=chegandohtml)
 
 chegandohtml.close()
@@ -123,7 +135,7 @@ for row in aguardartable[1:]:
     if len(row) == 6:
         lastcodigo = row[0]
 
-print("%s %s %s" % (aguardarheader, aguardarbody, commonfooter),
+print("%s %s %s" % (aguardarheader, aguardarbody, aguardarfooter),
       file=aguardarhtml)
 
 aguardarhtml.close()
