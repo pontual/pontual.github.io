@@ -144,21 +144,24 @@ chegandohtml = open("pontual.github.io/chegando/chegando.html", 'w')
 for row in chegandotable[1:]:
     codigo = row[1]
     chegandoqty = int(row[3])
-    chegandoreservado = reservadocontainer[codigo]
+    if codigo in reservadocontainer:
+        chegandoreservado = reservadocontainer[codigo]
+    else:
+        chegandoreservado = 0
     if chegandoreservado > chegandoqty:
         rowreservado = chegandoqty
     else:
         rowreservado = chegandoreservado
     chegandoreservado -= rowreservado
-    
+
     chegandobody += """
     <tr>
     <td>%s</td>
     <td>%s</td>
     <td>%s</td>
-    <td>%s</td>
-    <td>%s</td>
-    </tr>""" % tuple(row[1:4]) + (rowreservado, chegandoqty - rowreservado)
+    <td>%d</td>
+    <td>%d</td>
+    </tr>""" % (tuple(row[1:4]) + (rowreservado, (chegandoqty - rowreservado)))
     
 print("%s %s %s" % (chegandoheader, chegandobody, chegandofooter),
       file=chegandohtml)
