@@ -152,7 +152,8 @@ for row in chegandotable[1:]:
         rowreservado = chegandoqty
     else:
         rowreservado = chegandoreservado
-    chegandoreservado -= rowreservado
+    if codigo in reservadocontainer:
+        reservadocontainer[codigo] -= rowreservado
 
     chegandobody += """
     <tr>
