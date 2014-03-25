@@ -161,7 +161,7 @@ for row in chegandotable[1:]:
     <td>%s</td>
     <td>%d</td>
     <td>%d</td>
-    </tr>""" % (tuple(row[1:4]) + (rowreservado, (chegandoqty - rowreservado)))
+    </tr>""" % (tuple(row[1:]) + (rowreservado, (chegandoqty - rowreservado)))
     
 print("%s %s %s" % (chegandoheader, chegandobody, chegandofooter),
       file=chegandohtml)
