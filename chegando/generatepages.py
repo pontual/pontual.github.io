@@ -49,7 +49,7 @@ aguardarfooter = commonfooter + """
 chegandofooter = commonfooter + """
 <script> 
   $(document).ready(function() {
-    $("#myTable").tablesorter({ sortList: [[1,0], [0,0]] });
+    $("#myTable").tablesorter({ sortList: [[0,0]] });
   });
 </script>
 """
