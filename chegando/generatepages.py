@@ -18,6 +18,7 @@ commonheader = """
 <link rel="stylesheet" href="../css/tablesorterblue/style.css" type="text/css">
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/jquery.tablesorter.min.js"></script>
+<title>Pontual Listas</title>
 </head>
 
 <body>
