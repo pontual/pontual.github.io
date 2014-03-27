@@ -56,8 +56,7 @@ chegandoheader = commonheader + '''
 aguardando chegada de container ou desistencia</a>
 <br><br>
 <h1>PRODUTOS ENCOMENDADOS DA FABRICA</h1>
-O numero seguido de '+' indica que chegara num container ou deste numero ou
-qualquer numero acima.<br><br>
+O numero seguido de '+' indica que chegara num container deste numero ou maior.
 
 <table id="myTable" class="tablesorter">
   <thead>
