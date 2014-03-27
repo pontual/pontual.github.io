@@ -114,8 +114,7 @@ for row in aguardartable[1:]:
     # could be missing either codigo or ja resv
     # check if second-to-last value is a number
     if len(row) == 5:
-        #if row[3].isdigit():  # missing codigo
-        if row[-1].isdigit() and row[-2].isdigit():  # missing codigo
+        if row[3].isdigit():  # missing codigo
             row.insert(0, lastcodigo)
         else:
             row.append(0)
