@@ -74,8 +74,8 @@ container.
 '''
 
 aguardarheader = commonheader + '''
-<h2><a href="chegando.html">Clique aqui para ver a lista de produtos chegando</h2>
-em futuros containers</a>
+<h2><a href="chegando.html">Clique aqui para ver a lista de produtos chegando
+em futuros containers</a></h2>
 <br><br>
 <h1>PEDIDOS DE CLIENTES AGUARDANDO CONTAINER OU DESISTENCIA</h1>
 <table id="myTable" class="tablesorter">
