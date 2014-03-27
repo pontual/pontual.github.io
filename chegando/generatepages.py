@@ -52,11 +52,12 @@ chegandofooter = commonfooter + """
 """
 
 chegandoheader = commonheader + '''
-<b>PRODUTOS ENCOMENDADOS DA FABRICA</b><br>
-O numero seguido de '+' indica que chegara num container ou deste numero ou
-qualquer numero acima.<br><br>
 <a href="aguardar.html">Clique aqui para ver a lista de pedidos de clientes
 aguardando chegada de container ou desistencia</a>
+<br><br>
+<h1>PRODUTOS ENCOMENDADOS DA FABRICA</h1>
+O numero seguido de '+' indica que chegara num container ou deste numero ou
+qualquer numero acima.<br><br>
 
 <table id="myTable" class="tablesorter">
   <thead>
@@ -72,10 +73,10 @@ aguardando chegada de container ou desistencia</a>
 '''
 
 aguardarheader = commonheader + '''
-<b>PEDIDOS DE CLIENTES AGUARDANDO CONTAINER OU DESISTENCIA</b>
-<br><br>
 <a href="chegando.html">Clique aqui para ver a lista de produtos chegando
 em futuros containers</a>
+<br><br>
+<h1>PEDIDOS DE CLIENTES AGUARDANDO CONTAINER OU DESISTENCIA</h1>
 <table id="myTable" class="tablesorter">
   <thead>
     <tr>
