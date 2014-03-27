@@ -134,7 +134,7 @@ for row in aguardartable[1:]:
     place = row[3]
     qty = int(row[4])
     
-    if "Desistencia" not in place:
+    if place != "Desistencia":
         if codigo not in reservadocontainer:
             reservadocontainer[codigo] = qty
         else:
