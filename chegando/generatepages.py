@@ -65,9 +65,9 @@ container.
     <tr>
       <th width="20%">Codigo</th>
       <th width="20%">Container</th>
-      <th width="20%">Quantidade</th>
-      <th width="20%">Ja reservado</th>
       <th width="20%">Disponivel</th>
+      <th width="20%">Total</th>
+      <th width="20%">Ja reservado</th>
     </tr>
   </thead>
   <tbody>
@@ -175,7 +175,8 @@ for row in chegandotable[1:]:
     <td>%s</td>
     <td>%d</td>
     <td>%d</td>
-    </tr>""" % (tuple(row[1:]) + (rowreservado, (chegandoqty - rowreservado)))
+#    </tr>""" % (tuple(row[1:]) + (rowreservado, (chegandoqty - rowreservado)))
+    </tr>""" % (row[1], row[2], (chegandoqty - rowreservado), row[3], rowreservado)
     
 print("%s %s %s" % (chegandoheader, chegandobody, chegandofooter),
       file=chegandohtml)
