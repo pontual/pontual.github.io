@@ -172,8 +172,8 @@ for row in chegandotable[1:]:
     <tr>
     <td>%s</td>
     <td>%s</td>
-    <td>%s</td>
     <td>%d</td>
+    <td>%s</td>
     <td>%d</td>
     </tr>""" % (row[1], row[2], (chegandoqty - rowreservado), row[3], rowreservado)
 
