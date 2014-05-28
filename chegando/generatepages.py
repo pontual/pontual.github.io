@@ -175,9 +175,10 @@ for row in chegandotable[1:]:
     <td>%s</td>
     <td>%d</td>
     <td>%d</td>
-#    </tr>""" % (tuple(row[1:]) + (rowreservado, (chegandoqty - rowreservado)))
     </tr>""" % (row[1], row[2], (chegandoqty - rowreservado), row[3], rowreservado)
-    
+
+    # OLD ORDER % (tuple(row[1:]) + (rowreservado, (chegandoqty - rowreservado)))
+
 print("%s %s %s" % (chegandoheader, chegandobody, chegandofooter),
       file=chegandohtml)
 
