@@ -1,1 +1,43 @@
 body { font-size: 10px; font-family: sans-serif; }
+
+.site_header, .site_sidebar, .site_content { border: 3px solid black; }
+
+.site_header {
+    position: relative;
+    width: 100%;
+    background-color: #ffeeee;
+    padding: 10px;
+    overflow: auto;
+}
+
+.site_header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.site_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeff;
+    padding: 20px;
+}
+
+.site_sidebar {
+    position: relative;
+    float: left;
+    height: 95%;
+    background-color: #eeffff;
+    padding: 15px;
+}
+
+.site_logo {
+    position: relative;
+    float: left;
+}
+
+.site_banner {
+    position: relative;
+    float: left;
+    padding: 10px;
+}
