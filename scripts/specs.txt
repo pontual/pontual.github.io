@@ -1,0 +1,19 @@
+Run some Python scripts that pull static product data (codes, descriptions, colors, photos) and produce static HTML (with CSS and JavaScript)
+
+Scripts should create printable pages, for example, for directions and contact page
+
+Code files
+/category_data/canecas.txt
+/category_data/squeeze.txt
+
+each file begins with a description line followed by codes
+
+Kits de Ferramentas
+143122
+145124A
+145124C
+...
+
+/scripts/data/product_desc.txt
+codes followed by a colon and text description
+
