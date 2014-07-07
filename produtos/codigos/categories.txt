@@ -1,9 +1,37 @@
-balancas
-canecas
-squeezes
-porta copos
-kits caneta
-calculadoras
-mouse pads
-chaveiros
-espelhos
+# skip lines starting with #
+#
+# file name;display name
+balancas;Balanças
+canecas;Canecas
+squeezes;Squeezes
+portacopo;Porta Copos
+kitcaneta;Kits Caneta e Chaveiro
+calculadoras;Calculadoras
+mousepads;Mouse Pads
+chaveiros;Chaveiros
+espelhos;Espelhos
+pinceis;Pincéis para Maquiagem
+pincas;Pinças
+vaporizadores;Vaporizadores de Perfume
+necessaires;Necessaires
+portabatom;Porta Batons
+portabolsa;Porta Bolsas
+ferramentas;Ferramentas
+canivetes;Canivetes
+alicates;Alicates
+jogos;Jogos
+radios;Rádios
+kitchurrasco;Kits Churrasco
+kitqueijo;Kits Queijo
+kitcozinha;Kits Cozinha
+kitvinho;Kits Vinho
+whisky;Cantis para Whisky
+kitmanicure;Kits Manicure
+kitcostura;Kits Costura
+lanternas;Lanternas
+lupas;Lupas
+portacartao;Porta Cartões
+binoculos;Binóculos
+blocos;Blocos para Anotação
+portafoto;Porta Fotos
+relogios;Relógios

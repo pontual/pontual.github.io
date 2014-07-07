@@ -1,0 +1,3 @@
+# read categories.txt
+# 
+# for each filename, accumulate codes
