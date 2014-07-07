@@ -133,6 +133,10 @@ for row in aguardartable[1:]:
     codigo = row[0]
     place = row[3]
     qty = int(row[4])
+
+    # account for jaseparado
+    jaseparado = int(row[5])
+    qty = qty - jaseparado
     
     if place != "Desistencia":
         if codigo not in reservadocontainer:
