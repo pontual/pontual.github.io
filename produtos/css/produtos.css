@@ -1,0 +1,36 @@
+#content {
+    padding-top: 70px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0px;
+    z-index: 10;
+}
+
+/*
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+*/
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #1682de;
+    color: #ffffff;
+}
+
+ul.products li {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    border: 1px;
+}
+
+.dropdown-menu {
+    max-height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
