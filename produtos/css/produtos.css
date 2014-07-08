@@ -28,16 +28,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 ul.products li {
     display: inline-block;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 4px;
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
-    padding: 0;
+    padding: 0px 0px 10px 0px;
+    border: 2px solid #999999;
 }
 
+ul.products li a {
+    text-decoration: none;
+}
 
 .dropdown-menu {
     max-height: 550px;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.category_name {
+    font-size: 20px;
+    font-weight: bold;
 }

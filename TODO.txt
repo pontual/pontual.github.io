@@ -1,0 +1,7 @@
+- Fill in product descriptions in produtos/product_names.txt
+
+- Create a maps page
+
+- take picture of showroom
+
+- clean up 140873A picture

@@ -30,14 +30,6 @@ body { font-size: 12px; font-family: sans-serif; }
     background-color: #ffffff;
 }
 
-.site_sidebar {
-    position: relative;
-    float: left;
-    height: 95%;
-    background-color: #eeffff;
-    width: 20%;
-}
-
 .site_logo {
     position: relative;
     float: left;
@@ -55,11 +47,26 @@ body { font-size: 12px; font-family: sans-serif; }
     padding: 10px;
 }
 
-.site_content {
+.site_sidebar {
     position: relative;
     float: left;
-    padding: 10px;
-    width: 70%;
+    height: 95%;
+    background-color: #eeffff;
+/*    width: 20%; */
+    padding: 0;
+}
+
+.site_content {
+    position: relative;
+/*    float: left; */
+    padding: 0;
+    overflow: hidden;
+/*    width: 80%; */
+}
+
+.site_gallery {
+    padding: 0px 0px 0px 5px;
+    text-align: center;
 }
 
 .site_footer {
@@ -94,7 +101,7 @@ body { font-size: 12px; font-family: sans-serif; }
     text-decoration: none;
     font-size: 1em;
     display: block;
-    padding: 3px 45px 3px 15px;
+    padding: 3px 20px 3px 15px;
     background: inherit;
 }
 

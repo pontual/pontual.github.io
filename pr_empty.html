@@ -1,0 +1,80 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Pontual Exportação e Importação</title>
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="produtos/css/produtos.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+  <body>
+	<div class="site_header">
+	  <a href="index.html">
+		<div class="site_logo">
+		  <img src="img/logo_transp.png" style="vertical-align: top;">
+		</div>
+		<div class="site_banner">
+		  PONTUAL EXPORTAÇÃO E IMPORTAÇÃO<br>
+		  BANNER MESSAGE
+		</div>
+	  </a>
+	  <div class="site_address">
+		Rua Antônio de Andrade, 109<br>
+		Sao Paulo, SP, CEP ?????-??? XXXX<br>
+		(11) 3228-1113 / 3227-4026 / 3313-7704<br>
+		<a href="mapa.html"><i>XXXX LINK<u>ver mapa</u></i></a>
+	  </div>
+	</div>
+
+	<div class="site_body_container">
+	  <div class="site_sidebar">
+		<ul>
+SIDEBAR
+		</ul>
+		<br>
+		<div class="site_footer">
+		  (C) 2014
+		</div>
+
+	  </div>
+
+	  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<div class="slides"></div>
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>	  
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	  </div>
+
+	  <div class="site_content">
+		<div class="site_gallery">
+		  <span class="category_name"> CATEGORY NAME </span>
+		  <div class="container" id="gallery_container"> 
+			<div id="links">
+			  <ul class="products">
+
+				GALLERY
+				
+			  </ul>
+			</div>			
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- http://jsfiddle.net/9Wg3T/3/ -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/blueimp-gallery.min.js"></script>
+	<script>
+	  document.getElementById('links').onclick = function (event) {
+	  event = event || window.event;
+	  var target = event.target || event.srcElement,
+	  link = target.src ? target.parentNode : target,
+	  options = {index: link, event: event},
+	  links = this.getElementsByTagName('a');
+	  blueimp.Gallery(links, options);
+	  };
+	</script>
+  </body>
+</html>
