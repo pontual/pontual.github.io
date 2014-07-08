@@ -12,6 +12,11 @@ def generate_site():
     for category in category_ids:
         category_html = open("pr_{0}.html".format(category), "w")
         print(generate_category_page(category), file=category_html)
+        category_html.close()
+        category_printable_html = open("pr_{0}_impr.html".format(category), "w")
+        print(generate_category_page_printable(category),
+              file=category_printable_html)
+        category_printable_html.close()
         
 def generate_sidebar():
     """return a string containing only <li> items"""
@@ -96,6 +101,62 @@ def generate_category_page(category_id):
 		</div>
 	  </div>
           <div class="site_content">
+        <div style="float:right;"><i><a href="pr_{3}_impr.html">Página para impressão</a></i></div>
+    <br>
+		<div class="site_gallery">
+		  <span class="category_name">{1}</span>
+		  <div class="container" id="gallery_container"> 
+			<div id="links">
+			  <ul class="products">
+{2}
+			  </ul>
+			</div>			
+		  </div>
+		</div>
+	  </div>
+	</div>
+          <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<div class="slides"></div>
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>	  
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	  </div>
+	<!-- http://jsfiddle.net/9Wg3T/3/ -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/blueimp-gallery.min.js"></script>
+	<script src="js/setup_blueimp.js"></script>    
+    </body>
+</html>""".format(generate_sidebar(), category_name, generate_gallery(category_id), category_id)
+    return output
+
+def generate_category_page_printable(category_id):
+    # find category's full name
+    category_name = "sem nome"
+    categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
+    for line in categories_file:
+        if not line[0] == "#":
+            category_data = line.split(";")
+            if category_id == category_data[0]:
+                category_name = category_data[1].strip()
+    categories_file.close()
+    output = """
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Pontual Exportação e Importação</title>
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="produtos/css/produtos.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+  <body>
+    <a href="index.html">Voltar</a><br>
+    <center>PONTUAL EXPORTAÇÃO E IMPORTAÇÃO</center>
+<hr>
+    <div class="site_content">
 		<div class="site_gallery">
 		  <span class="category_name">{1}</span>
 		  <div class="container" id="gallery_container"> 
