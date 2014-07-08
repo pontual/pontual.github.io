@@ -40,7 +40,7 @@ def generate_gallery(category_id):
     for codigo in codigos_file:
         codigo = codigo.strip()
         gallery += ('<li><a href="produtos/fotos/full_{0}.jpg" title="{1} - {0}"><img src="produtos/fotos/thumb_{0}.jpg"><br>{0}</a></li>\n'.
-                    format(codigo, product_db.get(codigo, "sem nome")))
+                    format(codigo, product_db.get(codigo, "")))
     codigos_file.close()
     return gallery
 
@@ -55,7 +55,7 @@ def load_product_names():
 
 def generate_category_page(category_id):
     # find category's full name
-    category_name = "sem nome"
+    category_name = ""
     categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
     for line in categories_file:
         if not line[0] == "#":
@@ -135,7 +135,7 @@ def generate_category_page(category_id):
 
 def generate_category_page_printable(category_id):
     # find category's full name
-    category_name = "sem nome"
+    category_name = ""
     categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
     for line in categories_file:
         if not line[0] == "#":
