@@ -2,11 +2,13 @@ body { font-size: 12px; font-family: sans-serif; }
 
 /* Site built by Heitor Chang */
 
+/*
 
 .site_header, .site_sidebar, .site_body_container { border: 3px solid black; }
   
 .site_content { border: 5px dashed blue; }
 
+*/
 
 .site_header {
     position: relative;
