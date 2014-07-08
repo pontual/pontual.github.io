@@ -1,0 +1,9 @@
+.div_grid {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+    text-align: center;
+}

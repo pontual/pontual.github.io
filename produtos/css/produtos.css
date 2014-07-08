@@ -1,7 +1,3 @@
-#content {
-    padding-top: 70px;
-}
-
 .navbar .dropdown-menu {
     margin-top: 0px;
     z-index: 10;
@@ -18,16 +14,28 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color: #ffffff;
 }
 
+#links {
+    width: 100%;
+    padding: 0;
+}
+
+#gallery_container {
+    width: 100%;
+    padding: 0;
+}
+
+
 ul.products li {
-    width: 200px;
     display: inline-block;
     text-align: center;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
-    border: 1px;
+    border: 1px solid black;
+    padding: 0;
 }
+
 
 .dropdown-menu {
     max-height: 550px;
