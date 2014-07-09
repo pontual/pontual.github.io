@@ -45,7 +45,9 @@ def generate_site():
     Tels. (11) 3228-1113 / 3227-4026 / 3313-7704
     </div>
     <br>
+    <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">
     <img src="img/mapa_static.png">
+    </a>
     </div>
     """), file=mapa_html)
     mapa_html.close()
