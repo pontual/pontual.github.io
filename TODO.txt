@@ -1,6 +1,7 @@
 - Fill in product descriptions in produtos/product_names.txt
 
-- Create a maps page
+- Correct CEP
+
+- Correct email (buy domain or create new gmail account)
 
 - take picture of showroom for main page
-

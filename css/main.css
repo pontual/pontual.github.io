@@ -136,3 +136,22 @@ body { font-size: 12px; font-family: sans-serif; }
     color: #ff0033;
     border-bottom: 1px solid #cccccc;
 }
+
+.map_block {
+    text-align: center;
+}
+
+.map_address {
+    font-size: 16px;
+}
+
+.telefones {
+    font-size: 14px;
+    font-weight: bold;
+    font-decoration: none;
+}
+
+.telefones a {
+    color: #0066ff;
+}
+

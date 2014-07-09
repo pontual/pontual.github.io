@@ -30,7 +30,23 @@ def generate_site():
     index_html.close()
     mapa_html = open("mapa.html", "w")
     print(generate_custom("""
-    Google map here
+    <div class="map_block">
+    <br>
+    <!-- MAPA -->
+    <h2>
+    <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">Direções</a>
+    </h2>
+    <div class="map_address">
+
+    Rua Antônio de Andrade, 109<br>
+    Sao Paulo, SP, CEP ?????-??? XXXX<br>
+
+    <br>
+    Tels. (11) 3228-1113 / 3227-4026 / 3313-7704
+    </div>
+    <br>
+    <img src="img/mapa_static.png">
+    </div>
     """), file=mapa_html)
     mapa_html.close()
         
@@ -84,19 +100,26 @@ site_header = """
 		<div class="site_logo">
 		  <img src="img/logo_transp.png" style="vertical-align: top;">
 		</div>
+</a>
 		<div class="site_banner">
+<a href="index.html">
 <span class="banner_company_name">
 PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
 </span><br>
-<i>Brindes e Presentes Promocionais</i>
+<i>Brindes e Presentes Promocionais</i><br>
+</a>
+<span class="telefones">
+(11) 3228-1113 / 3227-4026 / 3313-7704<br>
+<a href="mailto:heitorpontual@gmail.com">contato@pontualexportacao.com.br</a>
+</span>
+<br>
 		</div>
-	  </a>
 	  <div class="site_address">
 <a href="mapa.html">
 		Rua Antônio de Andrade, 109<br>
 		Sao Paulo, SP, CEP ?????-??? XXXX<br>
 		(11) 3228-1113 / 3227-4026 / 3313-7704<br>
-		<u><b>Como chegar</b></u> XXXX add map
+		<u><b>Como chegar</b></u>
 </a>
 	  </div>
 	</div>
