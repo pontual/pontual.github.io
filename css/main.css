@@ -131,3 +131,9 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: linear-gradient(to right bottom, #70FF7A 75%, #1AAD29 100%);
     color: #000000;
 }
+
+.banner_company_name {
+    font-size: 20px;
+    color: #ff0033;
+    border-bottom: 1px solid #cccccc;
+}

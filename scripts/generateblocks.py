@@ -69,17 +69,7 @@ def load_product_names():
     product_name_file.close()
     return product_name_db
 
-def generate_category_page(category_id):
-    # find category's full name
-    category_name = ""
-    categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
-    for line in categories_file:
-        if not line[0] == "#":
-            category_data = line.split(";")
-            if category_id == category_data[0]:
-                category_name = category_data[1].strip()
-    categories_file.close()
-    output = """
+site_header = """
 <html>
   <head>
 	<meta charset="utf-8">
@@ -95,17 +85,34 @@ def generate_category_page(category_id):
 		  <img src="img/logo_transp.png" style="vertical-align: top;">
 		</div>
 		<div class="site_banner">
-		  PONTUAL EXPORTAÇÃO E IMPORTAÇÃO<br>
-		  BANNER MESSAGE
+<span class="banner_company_name">
+PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
+</span><br>
+<i>Brindes e Presentes Promocionais</i>
 		</div>
 	  </a>
 	  <div class="site_address">
+<a href="mapa.html">
 		Rua Antônio de Andrade, 109<br>
 		Sao Paulo, SP, CEP ?????-??? XXXX<br>
 		(11) 3228-1113 / 3227-4026 / 3313-7704<br>
-		<a href="mapa.html"><i>XXXX LINK<u>ver mapa</u></i></a>
+		<u><b>Como chegar</b></u> XXXX add map
+</a>
 	  </div>
 	</div>
+"""
+    
+def generate_category_page(category_id):
+    # find category's full name
+    category_name = ""
+    categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
+    for line in categories_file:
+        if not line[0] == "#":
+            category_data = line.split(";")
+            if category_id == category_data[0]:
+                category_name = category_data[1].strip()
+    categories_file.close()
+    output = site_header + """
 	<div class="site_body_container">
 	  <div class="site_sidebar">
 		<ul>
@@ -117,6 +124,7 @@ def generate_category_page(category_id):
 		</div>
 	  </div>
           <div class="site_content">
+    <br>
         <div style="float:right;"><i><a href="pr_{3}_impr.html">Página para impressão</a></i></div>
     <br>
 		<div class="site_gallery">
@@ -151,32 +159,7 @@ def generate_category_page(category_id):
 
 
 def generate_custom(content):
-    output = """
-<html>
-  <head>
-	<meta charset="utf-8">
-	<title>Pontual Exportação e Importação</title>
-	<link rel="stylesheet" href="produtos/css/produtos.css">
-	<link rel="stylesheet" href="css/main.css" type="text/css">
-  </head>
-  <body>
-	<div class="site_header">
-	  <a href="index.html">
-		<div class="site_logo">
-		  <img src="img/logo_transp.png" style="vertical-align: top;">
-		</div>
-		<div class="site_banner">
-		  PONTUAL EXPORTAÇÃO E IMPORTAÇÃO<br>
-		  BANNER MESSAGE
-		</div>
-	  </a>
-	  <div class="site_address">
-		Rua Antônio de Andrade, 109<br>
-		Sao Paulo, SP, CEP ?????-??? XXXX<br>
-		(11) 3228-1113 / 3227-4026 / 3313-7704<br>
-		<a href="mapa.html"><i>XXXX LINK<u>ver mapa</u></i></a>
-	  </div>
-	</div>
+    output = site_header + """
 	<div class="site_body_container">
 	  <div class="site_sidebar">
 		<ul>
