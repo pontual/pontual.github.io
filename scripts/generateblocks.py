@@ -95,6 +95,7 @@ site_header = """
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	<link rel="stylesheet" href="produtos/css/produtos.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+<!-- Site built by Heitor Chang -->
   </head>
   <body>
 	<div class="site_header">
