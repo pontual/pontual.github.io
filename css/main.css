@@ -13,9 +13,20 @@ body { font-size: 12px; font-family: sans-serif; }
 .site_header {
     position: relative;
     width: 100%;
-    background-color: #ffffff;
     padding: 0px;
     overflow: auto;
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0.85, #FFFFFF),
+	    color-stop(1, #003012)
+    );
+    background-image: -o-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
+    background-image: linear-gradient(to bottom, #FFFFFF 85%, #003012 100%);
 }
 
 .site_header a {

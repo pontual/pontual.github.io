@@ -2,6 +2,5 @@
 
 - Create a maps page
 
-- take picture of showroom
+- take picture of showroom for main page
 
-- clean up 140873A picture

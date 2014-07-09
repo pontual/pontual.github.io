@@ -17,6 +17,22 @@ def generate_site():
         print(generate_category_page_printable(category),
               file=category_printable_html)
         category_printable_html.close()
+    index_html = open("index.html", "w")
+    print(generate_custom("""
+    <center><h1>
+    Bem-vindos ao nosso site!
+    </h1></center>
+<hr>
+    <center>
+    Visite nosso Showroom!
+    </center>
+    """), file=index_html)
+    index_html.close()
+    mapa_html = open("mapa.html", "w")
+    print(generate_custom("""
+    Google map here
+    """), file=mapa_html)
+    mapa_html.close()
         
 def generate_sidebar():
     """return a string containing only <li> items"""
@@ -131,6 +147,58 @@ def generate_category_page(category_id):
 	<script src="js/setup_blueimp.js"></script>    
     </body>
 </html>""".format(generate_sidebar(), category_name, generate_gallery(category_id), category_id)
+    return output
+
+
+def generate_custom(content):
+    output = """
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Pontual Exportação e Importação</title>
+	<link rel="stylesheet" href="produtos/css/produtos.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+  <body>
+	<div class="site_header">
+	  <a href="index.html">
+		<div class="site_logo">
+		  <img src="img/logo_transp.png" style="vertical-align: top;">
+		</div>
+		<div class="site_banner">
+		  PONTUAL EXPORTAÇÃO E IMPORTAÇÃO<br>
+		  BANNER MESSAGE
+		</div>
+	  </a>
+	  <div class="site_address">
+		Rua Antônio de Andrade, 109<br>
+		Sao Paulo, SP, CEP ?????-??? XXXX<br>
+		(11) 3228-1113 / 3227-4026 / 3313-7704<br>
+		<a href="mapa.html"><i>XXXX LINK<u>ver mapa</u></i></a>
+	  </div>
+	</div>
+	<div class="site_body_container">
+	  <div class="site_sidebar">
+		<ul>
+{0}
+		</ul>
+		<br>
+		<div class="site_footer">
+		  (C) 2014
+		</div>
+	  </div>
+          <div class="site_content">
+    <!--
+		  <span class="category_name">INDEX</span>
+    -->
+{1}
+	  </div>
+	</div>
+	<!-- http://jsfiddle.net/9Wg3T/3/ -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    </body>
+</html>""".format(generate_sidebar(), content)
     return output
 
 def generate_category_page_printable(category_id):
