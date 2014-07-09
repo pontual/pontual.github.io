@@ -99,6 +99,7 @@ site_header = """
   </head>
   <body>
 	<div class="site_header">
+<a name="top">&nbsp;</a>
 	  <a href="index.html">
 		<div class="site_logo">
 		  <img src="img/logo_transp.png" style="vertical-align: top;">
@@ -127,7 +128,15 @@ PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
 	  </div>
 	</div>
 """
-    
+
+site_footer = """
+<div class="back_to_top">
+<a href="#top">
+Voltar ao topo <img src="img/uparrow.png" style="vertical-align:top;">
+</a>
+</div>
+"""
+
 def generate_category_page(category_id):
     # find category's full name
     category_name = ""
@@ -178,9 +187,10 @@ def generate_category_page(category_id):
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/blueimp-gallery.min.js"></script>
-	<script src="js/setup_blueimp.js"></script>    
+	<script src="js/setup_blueimp.js"></script>
+    {4}
     </body>
-</html>""".format(generate_sidebar(), category_name, generate_gallery(category_id), category_id)
+</html>""".format(generate_sidebar(), category_name, generate_gallery(category_id), category_id, site_footer)
     return output
 
 
@@ -206,8 +216,9 @@ def generate_custom(content):
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    {2}
     </body>
-</html>""".format(generate_sidebar(), content)
+</html>""".format(generate_sidebar(), content, site_footer)
     return output
 
 def generate_category_page_printable(category_id):

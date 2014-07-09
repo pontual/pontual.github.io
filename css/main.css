@@ -72,6 +72,7 @@ body { font-size: 12px; font-family: sans-serif; }
     padding: 0;
     overflow: hidden;
 /*    width: 80%; */
+    margin-bottom: 30px;
 }
 
 .site_gallery {
@@ -155,3 +156,18 @@ body { font-size: 12px; font-family: sans-serif; }
     color: #0066ff;
 }
 
+.back_to_top {
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+}
+
+.back_to_top a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px;
+}
