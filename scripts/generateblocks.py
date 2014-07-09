@@ -120,10 +120,10 @@ PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
 		</div>
 	  <div class="site_address">
 <a href="mapa.html">
-		Rua Antônio de Andrade, 109<br>
-		Sao Paulo, SP, CEP ?????-??? XXXX<br>
-		(11) 3228-1113 / 3227-4026 / 3313-7704<br>
-		<u><b>Como chegar</b></u>
+Rua Antônio de Andrade, 109<br>
+Canindé<br>
+Sao Paulo, SP, CEP ?????-??? XXXX<br>
+<u><b>Como chegar</b></u>
 </a>
 	  </div>
 	</div>
