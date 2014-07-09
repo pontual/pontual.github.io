@@ -161,7 +161,8 @@ body { font-size: 12px; font-family: sans-serif; }
     height: 20px;
     width: 100%;
     bottom: 0px;
-    text-align: center;
+    right: 15px;
+    text-align: right;
 }
 
 .back_to_top a {
@@ -170,4 +171,14 @@ body { font-size: 12px; font-family: sans-serif; }
     color: #000000;
     background-color: #ffffff;
     padding: 5px;
+}
+
+.carousel_container {
+    width: 650px;
+    height: 350px;
+}
+
+.carousel {
+    width: 600px;
+    height: 300px;
 }

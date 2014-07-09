@@ -3,11 +3,13 @@ import os
 def generate_site():
     category_ids = []
     categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
+    
     for line in categories_file:
         if not line[0] == "#":
             category_data = line.split(";")
             category_ids.append(category_data[0])
     categories_file.close()
+    
     os.chdir("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/")
     for category in category_ids:
         category_html = open("pr_{0}.html".format(category), "w")
@@ -17,18 +19,32 @@ def generate_site():
         print(generate_category_page_printable(category),
               file=category_printable_html)
         category_printable_html.close()
+
     index_html = open("index.html", "w")
-    print(generate_custom("""
-    <center><h1>
-    Bem-vindos ao nosso site!
-    </h1></center>
-<hr>
+
+    print(generate_index("""
+
     <center>
-    Visite nosso Showroom!
+    <h1>
+    Bem-vindos ao nosso site!
+    </h1>
+
+    <div class="carousel_container">
+    
+      <div class="carousel">
+        <div class="carousel_item"><a href="pr_chaveiros.html"><img src="carousel/placeholder_chaveiros.png"></a></div>
+        <div class="carousel_item"><a href="pr_canecas.html"><img src="carousel/placeholder_canecas.png"></a></div>
+        <div class="carousel_item"><a href="pr_squeezes.html"><img src="carousel/placeholder_squeezes.png"></a></div>
+      </div>
+
+    </div>
     </center>
+    
     """), file=index_html)
     index_html.close()
+
     mapa_html = open("mapa.html", "w")
+
     print(generate_custom("""
     <div class="map_block">
     <br>
@@ -55,6 +71,7 @@ def generate_site():
 def generate_sidebar():
     """return a string containing only <li> items"""
     sidebar = []
+
     categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
     for line in categories_file:
         if not line[0] == "#":
@@ -70,6 +87,7 @@ def generate_gallery(category_id):
     """return a string containing <li> items"""
     product_db = load_product_names()
     gallery = ""
+
     codigos_file=open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/{0}.txt".format(category_id))
     for codigo in codigos_file:
         codigo = codigo.strip()
@@ -95,6 +113,7 @@ site_header = """
 	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	<link rel="stylesheet" href="produtos/css/produtos.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 <!-- Site built by Heitor Chang -->
   </head>
   <body>
@@ -184,10 +203,10 @@ def generate_category_page(category_id):
 		<ol class="indicator"></ol>
 	  </div>
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/blueimp-gallery.min.js"></script>
-	<script src="js/setup_blueimp.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
+	<script type="text/javascript" src="js/setup_blueimp.js"></script>
     {4}
     </body>
 </html>""".format(generate_sidebar(), category_name, generate_gallery(category_id), category_id, site_footer)
@@ -213,14 +232,48 @@ def generate_custom(content):
 {1}
 	  </div>
 	</div>
-	<!-- http://jsfiddle.net/9Wg3T/3/ -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+
     {2}
+
+	<!-- http://jsfiddle.net/9Wg3T/3/ -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>""".format(generate_sidebar(), content, site_footer)
     return output
 
+def generate_index(content):
+    output = site_header + """
+	<div class="site_body_container">
+	  <div class="site_sidebar">
+		<ul>
+{0}
+		</ul>
+		<br>
+		<div class="site_footer">
+		  (C) 2014
+		</div>
+	  </div>
+          <div class="site_content">
+    <!--
+		  <span class="category_name">INDEX</span>
+    -->
+{1}
+	  </div>
+	</div>
+
+    {2}
+
+	<!-- http://jsfiddle.net/9Wg3T/3/ -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/setup_slick.js"></script>
+    </body>
+</html>""".format(generate_sidebar(), content, site_footer)
+    return output
+
+    
 def generate_category_page_printable(category_id):
     # find category's full name
     category_name = ""
@@ -267,10 +320,10 @@ def generate_category_page_printable(category_id):
 		<ol class="indicator"></ol>
 	  </div>
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/blueimp-gallery.min.js"></script>
-	<script src="js/setup_blueimp.js"></script>    
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
+	<script type="text/javascript" src="js/setup_blueimp.js"></script>    
     </body>
 </html>""".format(generate_sidebar(), category_name, generate_gallery(category_id))
     return output
