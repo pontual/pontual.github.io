@@ -8,3 +8,5 @@
 
 - front page Carousel like amazon.com
 http://kenwheeler.github.io/slick/
+
+- add written directions, such as, vindo do centro - entrar na marginal, etc
