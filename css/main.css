@@ -54,7 +54,7 @@ body { font-size: 12px; font-family: sans-serif; }
 
 .site_address {
     position: relative;
-    float: right;
+    float: left;
     padding: 10px;
 }
 
