@@ -1,7 +1,10 @@
 - Fill in product descriptions in produtos/product_names.txt
 
-- Correct CEP
+- Correct CEP - 03034-080?
 
 - Correct email (buy domain or create new gmail account)
 
 - take picture of showroom for main page
+
+- front page Carousel like amazon.com
+http://kenwheeler.github.io/slick/
