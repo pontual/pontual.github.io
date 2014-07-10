@@ -1,5 +1,7 @@
 import os
 
+TELEFONES = "(11) 3228-1113 / 3227-4026 / 3313-7704"
+
 def generate_site():
     category_ids = []
     categories_file = open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/categories.txt")
@@ -45,27 +47,40 @@ def generate_site():
     # define mapa content html
     mapa_content = """
        <div class="map_block">
-        <br>
-        <!-- MAPA -->
-        <h2>
-        <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">Direções</a>
-        </h2>
-        <div class="map_address">
 
-    Rua Antônio de Andrade, 109<br>
-    Canindé<br>
-    Sao Paulo, SP<br>
-    CEP 03034-080<br>
+		<!-- MAPA -->
+		<h2>
+	Direções
+		</h2>
+		<h3>Localização perto do Estádio do Canindé da Portuguesa</h3>
 
-        <br>
-        Tels. (11) 3228-1113 / 3227-4026 / 3313-7704
-        </div>
-        <br>
+    <hr>
+		<b><u>Vindo da Marginal Tietê sentido Ayrton Senna:</u></b><br><br>
+		
+		Siga a Marginal até chegar ao Estádio do Canindé<br><br>
+
+		Passando o estádio, vire à direita na quarta rua <b>(Iturama)</b> <br><br>
+
+		Vire à esquerda na segunda rua <b>(Antônio de Andrade)</b><br><br>
+
+
+    <hr>
+		<b><u>Vindo da Marginal Tietê sentido Castelo Branco:</u></b><br><br>
+
+		Entre na Ponte Vila Guilherme para atravessar a Marginal<br><br>
+
+		Vire à direita na <b>Av. Bom Jardim</b><br><br>
+
+		Passando a lombada eletrônica, vire à direita na segunda rua <b>(Iturama)</b><br><br>
+
+		Vire à esquerda na primeira rua <b>(Antônio de Andrade)</b>
+		
+    
         <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">
         <img src="img/mapa_static.png">
         </a>
         </div>
-    """            
+    """          
 
     # generate mapa
     mapa_html = open("mapa.html", "w")
@@ -148,7 +163,7 @@ PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
 <i>Brindes e Presentes Promocionais</i><br>
 </a>
 <span class="telefones">
-(11) 3228-1113 / 3227-4026 / 3313-7704<br>
+{telefones}<br>
 <a href="mailto:heitorpontual@gmail.com">contato@pontualexportacao.com.br</a>
 </span>
 <br>
@@ -162,7 +177,7 @@ Sao Paulo, SP, CEP 03034-080<br>
 </a>
 	  </div>
 	</div>
-"""
+""".format(telefones=TELEFONES)
 
 site_footer = """
 <div class="back_to_top">
@@ -292,6 +307,14 @@ def generate_index(content):
                       footer=site_footer)
     return output
 
+
+printable_header = """
+<div class="printable_header">
+<b>PONTUAL EXPORTAÇÃO E IMPORTAÇÃO</b><br>
+R. Antônio de Andrade, 109 - Canindé - São Paulo, SP, CEP 03034-080<br>
+{telefones}
+</div>
+""".format(telefones=TELEFONES)
     
 def generate_category_page_printable(category_id):
     # find category's full name
@@ -314,7 +337,7 @@ def generate_category_page_printable(category_id):
   </head>
   <body>
     <a href="index.html">Voltar</a><br>
-    <center>PONTUAL EXPORTAÇÃO E IMPORTAÇÃO</center>
+{printable_header}
 <hr>
     <div class="site_content">
 		<div class="site_gallery">
@@ -344,7 +367,9 @@ def generate_category_page_printable(category_id):
 	<script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
 	<script type="text/javascript" src="js/setup_blueimp.js"></script>    
     </body>
-</html>""".format(name=category_name, gallery=generate_gallery(category_id))
+    </html>""".format(name=category_name,
+                      gallery=generate_gallery(category_id),
+                      printable_header=printable_header)
     return output
 
 def generate_custom_page_printable(content):
@@ -359,7 +384,7 @@ def generate_custom_page_printable(content):
   </head>
   <body>
         <a href="index.html">Voltar</a><br>
-        <center>PONTUAL EXPORTAÇÃO E IMPORTAÇÃO</center>
+{printable_header}    
 <hr>
         <div class="site_content">
 {content}
@@ -370,5 +395,5 @@ def generate_custom_page_printable(content):
         <script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
         <script type="text/javascript" src="js/setup_blueimp.js"></script>        
         </body>
-</html>""".format(content=content)
+</html>""".format(content=content, printable_header=printable_header)
     return output

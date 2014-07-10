@@ -139,7 +139,7 @@ body { font-size: 12px; font-family: sans-serif; }
 }
 
 .map_block {
-    text-align: center;
+    padding-left: 20px;
 }
 
 .map_address {
@@ -181,4 +181,9 @@ body { font-size: 12px; font-family: sans-serif; }
 .carousel {
     width: 600px;
     height: 300px;
+}
+
+.printable_header {
+    width: 100%;
+    text-align: center;
 }

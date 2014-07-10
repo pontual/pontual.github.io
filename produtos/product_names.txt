@@ -50,7 +50,7 @@
 140304A;Chaveiro de metal jogador
 140304B;Chaveiro de metal jogador
 140310;Kit ferramentas c/ 25 pçs e estojo
-140395;Garrafa térmica de inox 750 ml
+140395;Garrafa térmica de inox 750 ml c/ estojo
 140399;Necessaire c/ 5 pçs
 140401;Mousepad c/ calculadora
 140402;Mousepad c/ calculadora
@@ -65,7 +65,7 @@
 140895;Relógio digital c/ porta foto
 140897;Rádio de plástico
 140900;Rádio de plástico
-140901;Moedor de pimenta à pilha
+140901;Moedor de pimenta a pilha
 140902A;Caneca plástica c/ alumínio
 140902G;Caneca plástica c/ alumínio
 140902T;Caneca plástica c/ alumínio
@@ -77,117 +77,117 @@
 140924;Relógio multifunção de plástico
 140926;Lupa 75mm c/ luz
 140927;Lupa 90mm c/ luz
-140943;
-140944;
-140963A;
-140963B;
-140964;
-140964A;
-140964B;
-140966;
-140970;
-140971;
-140975A;
-140975E;
-140975G;
-140975L;
-140975M;
-140975T;
-140975V;
-140975W;
-141001;
-141018 ;
-141018A;
-141018B;
-141018G;
-141018V;
-141019 ;
-141019A;
-141019B;
-141019G;
-141019V;
-141173;
-141175;
-141176;
-141177;
-141193;aumento
-141200;
-141222;
-141229;
-141231;
-141232;
-141235;
-141237;
-141244A;
-141244P;
-141248;
-141253;
-141256;
-141263;
-141264;
-141266;
-141267;
-141268;
-141275M;
-141276A;
-141283;
-141284;
-141295;
-141303;
-141306;
-141307;
-141309P;
-141309T;
-141312;
-141316;
-141705;
-141706;
-141708B;
-141709;
-141716;
-141719;
-141730;
-141733A;
-141734;
-141739;
-141742 ;
-141742A;
-141742B;
-141742G;
-141742L;
-141742V;
-141742W;
-141742Y;
-141764;
-141765;
-141767C;
-141767P;
-141771;
-141772;
-141773B;
-141773P;
-141773R;
-141773V;
-141774;
-141776;
-141778;
-141780B;
-141780C;
-141780D;
-141780R;
-141796P;
-141808;
-141809;
-141810 ;
-141810A;
-141810B;
-141813;
-141816;
-141821A;
-141821T;
-141821V;
-141823;
-141824;
+140943;Espelho de bolso duplo
+140944;Espelho de bolso duplo
+140963A;Kit caneta e lapiseira com chaveiro e canivete
+140963B;Kit caneta e lapiseira com chaveiro e canivete
+140964;Kit caneta e lapiseira com chaveiro
+140964A;Kit caneta e lapiseira com chaveiro
+140964B;Kit caneta e lapiseira com chaveiro
+140966;Rádio relógio de plástico
+140970;Porta tempero de plástico c/ 2 pçs
+140971;Moedor de pimenta plástico
+140975A;Caneca plástica 400 ml
+140975E;Caneca plástica 400 ml
+140975G;Caneca plástica 400 ml
+140975L;Caneca plástica 400 ml
+140975M;Caneca plástica 400 ml
+140975T;Caneca plástica 400 ml
+140975V;Caneca plástica 400 ml
+140975W;Caneca plástica 400 ml
+141001;Mini luminária plástica p/ livro
+141018;Squeeze de inox 400 ml
+141018A;Squeeze de inox 400 ml
+141018B;Squeeze de inox 400 ml
+141018G;Squeeze de inox 400 ml
+141018V;Squeeze de inox 400 ml
+141019;Squeeze de inox 600 ml
+141019A;Squeeze de inox 600 ml
+141019B;Squeeze de inox 600 ml
+141019G;Squeeze de inox 600 ml
+141019V;Squeeze de inox 600 ml
+141173;Luminária de plástico p/ leitura
+141175;Rádio de plástico
+141176;Relógio multifunção plástico
+141177;Rádio relógio multifunção plástico
+141193;Espelho c/ aumento e base metal
+141200;Kit churrasco c/ 17 pçs
+141222;Relógio de plástico c/ porta foto
+141229;Canivete c/ 7 funções
+141231;Balança p/ cozinha digital
+141232;Balança p/ cozinha digital
+141235;Jogo de ferramentas c/ 6 pçs
+141237;Espelho de bolso duplo c/ luz
+141244A;Bloco p/ anotação (azul)
+141244P;Bloco p/ anotação (preto)
+141248;Jogo de xadrez de plástico
+141253;Régua plástica c/ calculadora
+141256;Mini rádio FM auto procura
+141263;Espelho de bolso duplo c/ aumento
+141264;Espelho de bolso duplo c/ luz
+141266;Garrafa térmica de inox 1 litro c/ estojo
+141267;Moedor de pimenta de metal
+141268;Kit ferramentas c/ 8 pçs
+141275M;Kit queijo c/ 6 pçs (ímã)
+141276A;Kit queijo c/ 5 pçs
+141283;Lanterna c/ kit ferramentas
+141284;Lanterna c/ kit ferramentas
+141295;Caneca de inox e plástico 400 ml
+141303;Relógio multifunção de plástico
+141306;Cantil de inox 235 ml
+141307;Cantil de inox 200 ml
+141309P;Kit pincéis c/ 5 pçs
+141309T;Kit	pincéis c/ 5 pçs
+141312;Chaveiro de metal
+141316;Relógio multifunção com porta foto
+141705;Chaveiro de metal
+141706;Chaveiro de metal
+141708B;Espelho e escova de bolso
+141709;Mosquetão c/ bússola
+141716;Cantil de inox 265 ml
+141719;Garrafa térmica de inox 500 ml
+141730;Saca rolhas de metal
+141733A;Kit queijo c/ 5 pçs
+141734;Kit churrasco c/ avental
+141739;Saca rolhas de metal c/ base
+141742;Squeeze de inox 500 ml
+141742A;Squeeze de inox 500 ml
+141742B;Squeeze de inox 500 ml
+141742G;Squeeze de inox 500 ml
+141742L;Squeeze de inox 500 ml
+141742V;Squeeze de inox 500 ml
+141742W;Squeeze de inox 500 ml
+141742Y;Squeeze de inox 500 ml
+141764;Jogo de ferramentas c/ 8 pçs
+141765;Jogo de ferramentas c/ 6 pçs e estojo
+141767C;Kit costura com estojo
+141767P;Kit costura com estojo
+141771;Alicate com canivete e prendedor
+141772;Kit manicure c/ 8 pçs e estojo
+141773B;Kit manicure c/ 7 pçs
+141773P;Kit manicure c/ 7 pçs
+141773R;Kit manicure c/ 7 pçs
+141773V;Kit manicure c/ 7 pçs
+141774;Alicate multifunção
+141776;Kit manicure c/ 9 pçs e estojo
+141778;Lanterna de plástico manual
+141780B;Chaveiro de metal giratório
+141780C;Chaveiro de metal giratório
+141780D;Chaveiro de metal giratório
+141780R;Chaveiro de metal giratório
+141796P;Mousepad
+141808;Vaporizador de perfume 5 ml
+141809;Vaporizador de perfume 8 ml
+141810;Kit caneta e lapiseira com chaveiro e canivete
+141810A;Kit caneta e lapiseira com chaveiro e canivete
+141810B;Kit caneta e lapiseira com chaveiro e canivete
+141813;Caneca de inox 450 ml
+141816;Saca rolhas de metal
+141821A;Caneca portátil plástica
+141821T;Caneca portátil plástica
+141821V;Caneca portátil plástica
+141823;Porta caneta com relógio digital
+141824;Moedor de pimenta a pilha
 141825P;
 141830;
 141834;
@@ -255,10 +255,10 @@
 143024;
 143025;
 143026;
-143027 ;
+143027;
 143027A;
 143027V;
-143028;
+143028;Kit caneta e lapiseira com chaveiro e porta cartão
 143029;
 143030;
 143035;
@@ -293,7 +293,7 @@
 143085A;
 143085P;
 143085V;
-143086 ;
+143086;
 143086P;
 143087;
 143088;
@@ -444,7 +444,7 @@
 143194;
 143195;
 143196;
-143197;
+143197;Vaporizador de perfume 10 ml
 143198;
 143199;
 143203A;

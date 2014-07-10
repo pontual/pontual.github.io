@@ -4,5 +4,4 @@
 
 - Correct email (buy domain or create new gmail account)
 
-- front page Carousel banners
-
+- front page Carousel banners or showroom pic
