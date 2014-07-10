@@ -9,25 +9,24 @@ def generate_site():
             category_data = line.split(";")
             category_ids.append(category_data[0])
     categories_file.close()
-    
+
+    # generate category pages and corresponding printable pages
     os.chdir("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/")
     for category in category_ids:
-        category_html = open("pr_{0}.html".format(category), "w")
+        category_html = open("pr_{category}.html".format(category=category), "w")
         print(generate_category_page(category), file=category_html)
         category_html.close()
-        category_printable_html = open("pr_{0}_impr.html".format(category), "w")
+        category_printable_html = open("pr_{category}_impr.html".format(category=category), "w")
         print(generate_category_page_printable(category),
               file=category_printable_html)
         category_printable_html.close()
 
-    index_html = open("index.html", "w")
 
+    # generate index
+    index_html = open("index.html", "w")
     print(generate_index("""
 
     <center>
-    <h1>
-    Bem-vindos ao nosso site!
-    </h1>
 
     <div class="carousel_container">
     
@@ -43,30 +42,47 @@ def generate_site():
     """), file=index_html)
     index_html.close()
 
-    mapa_html = open("mapa.html", "w")
-
-    print(generate_custom("""
-    <div class="map_block">
-    <br>
-    <!-- MAPA -->
-    <h2>
-    <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">Direções</a>
-    </h2>
-    <div class="map_address">
+    # define mapa content html
+    mapa_content = """
+       <div class="map_block">
+        <br>
+        <!-- MAPA -->
+        <h2>
+        <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">Direções</a>
+        </h2>
+        <div class="map_address">
 
     Rua Antônio de Andrade, 109<br>
-    Sao Paulo, SP, CEP ?????-??? XXXX<br>
+    Canindé<br>
+    Sao Paulo, SP<br>
+    CEP 03034-080<br>
 
-    <br>
-    Tels. (11) 3228-1113 / 3227-4026 / 3313-7704
-    </div>
-    <br>
-    <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">
-    <img src="img/mapa_static.png">
-    </a>
-    </div>
-    """), file=mapa_html)
+        <br>
+        Tels. (11) 3228-1113 / 3227-4026 / 3313-7704
+        </div>
+        <br>
+        <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">
+        <img src="img/mapa_static.png">
+        </a>
+        </div>
+    """            
+
+    # generate mapa
+    mapa_html = open("mapa.html", "w")
+    print(generate_custom("""
+    <div style="float:right;"><i><a href="mapa_impr.html">Página para impressão</a></i></div>
+
+    {mapa}
+    
+    """.format(mapa=mapa_content)), file=mapa_html)
     mapa_html.close()
+
+    # generate mapa printable
+    mapa_impr_html = open("mapa_impr.html", "w")
+    print(generate_custom_page_printable("""
+    {mapa}
+    """.format(mapa=mapa_content)), file=mapa_impr_html)
+    mapa_impr_html.close()
         
 def generate_sidebar():
     """return a string containing only <li> items"""
@@ -77,9 +93,9 @@ def generate_sidebar():
         if not line[0] == "#":
             category_data = line.split(";")
             category_name = category_data[1].strip()
-            sidebar.append('<!-- {0} --><li><a href="pr_{1}.html">{0}</a></li>'.
-                           format(category_name,
-                                  category_data[0]))
+            sidebar.append('<!-- {name} --><li><a href="pr_{id}.html">{name}</a></li>'.
+                           format(name=category_name,
+                                  id=category_data[0]))
     categories_file.close()
     return "\n".join(sorted(sidebar))
 
@@ -88,11 +104,11 @@ def generate_gallery(category_id):
     product_db = load_product_names()
     gallery = ""
 
-    codigos_file=open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/{0}.txt".format(category_id))
+    codigos_file=open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/{id}.txt".format(id=category_id))
     for codigo in codigos_file:
         codigo = codigo.strip()
-        gallery += ('<li><a href="produtos/fotos/full_{0}.jpg" title="{1} - {0}"><img src="produtos/fotos/thumb_{0}.jpg"><br>{0}</a></li>\n'.
-                    format(codigo, product_db.get(codigo, "")))
+        gallery += ('<li><a href="produtos/fotos/full_{codigo}.jpg" title="{desc} - {codigo}"><img src="produtos/fotos/thumb_{codigo}.jpg"><br>{codigo}<br>{desc}</a></li>\n'.
+                    format(codigo=codigo, desc=product_db.get(codigo, "")))
     codigos_file.close()
     return gallery
 
@@ -141,7 +157,7 @@ PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
 <a href="mapa.html">
 Rua Antônio de Andrade, 109<br>
 Canindé<br>
-Sao Paulo, SP, CEP ?????-??? XXXX<br>
+Sao Paulo, SP, CEP 03034-080<br>
 <u><b>Como chegar</b></u>
 </a>
 	  </div>
@@ -170,7 +186,7 @@ def generate_category_page(category_id):
 	<div class="site_body_container">
 	  <div class="site_sidebar">
 		<ul>
-{0}
+{sidebar}
 		</ul>
 		<br>
 		<div class="site_footer">
@@ -179,14 +195,14 @@ def generate_category_page(category_id):
 	  </div>
           <div class="site_content">
     <br>
-        <div style="float:right;"><i><a href="pr_{3}_impr.html">Página para impressão</a></i></div>
+        <div style="float:right;"><i><a href="pr_{id}_impr.html">Página para impressão</a></i></div>
     <br>
 		<div class="site_gallery">
-		  <span class="category_name">{1}</span>
+		  <span class="category_name">{name}</span>
 		  <div class="container" id="gallery_container"> 
 			<div id="links">
 			  <ul class="products">
-{2}
+{gallery}
 			  </ul>
 			</div>			
 		  </div>
@@ -207,9 +223,13 @@ def generate_category_page(category_id):
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
 	<script type="text/javascript" src="js/setup_blueimp.js"></script>
-    {4}
+    {footer}
     </body>
-</html>""".format(generate_sidebar(), category_name, generate_gallery(category_id), category_id, site_footer)
+    </html>""".format(sidebar=generate_sidebar(),
+                      name=category_name,
+                      gallery=generate_gallery(category_id),
+                      id=category_id,
+                      footer=site_footer)
     return output
 
 
@@ -218,7 +238,7 @@ def generate_custom(content):
 	<div class="site_body_container">
 	  <div class="site_sidebar">
 		<ul>
-{0}
+{sidebar}
 		</ul>
 		<br>
 		<div class="site_footer">
@@ -229,17 +249,18 @@ def generate_custom(content):
     <!--
 		  <span class="category_name">INDEX</span>
     -->
-{1}
+{content}
 	  </div>
 	</div>
 
-    {2}
+    {footer}
 
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
-</html>""".format(generate_sidebar(), content, site_footer)
+    </html>""".format(sidebar=generate_sidebar(), content=content,
+                      footer=site_footer)
     return output
 
 def generate_index(content):
@@ -247,7 +268,7 @@ def generate_index(content):
 	<div class="site_body_container">
 	  <div class="site_sidebar">
 		<ul>
-{0}
+{sidebar}
 		</ul>
 		<br>
 		<div class="site_footer">
@@ -255,14 +276,11 @@ def generate_index(content):
 		</div>
 	  </div>
           <div class="site_content">
-    <!--
-		  <span class="category_name">INDEX</span>
-    -->
-{1}
+{content}
 	  </div>
 	</div>
 
-    {2}
+    {footer}
 
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -270,7 +288,8 @@ def generate_index(content):
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/setup_slick.js"></script>
     </body>
-</html>""".format(generate_sidebar(), content, site_footer)
+    </html>""".format(sidebar=generate_sidebar(), content=content,
+                      footer=site_footer)
     return output
 
     
@@ -299,11 +318,11 @@ def generate_category_page_printable(category_id):
 <hr>
     <div class="site_content">
 		<div class="site_gallery">
-		  <span class="category_name">{1}</span>
+		  <span class="category_name">{name}</span>
 		  <div class="container" id="gallery_container"> 
 			<div id="links">
 			  <ul class="products">
-{2}
+{gallery}
 			  </ul>
 			</div>			
 		  </div>
@@ -325,5 +344,31 @@ def generate_category_page_printable(category_id):
 	<script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
 	<script type="text/javascript" src="js/setup_blueimp.js"></script>    
     </body>
-</html>""".format(generate_sidebar(), category_name, generate_gallery(category_id))
+</html>""".format(name=category_name, gallery=generate_gallery(category_id))
+    return output
+
+def generate_custom_page_printable(content):
+    output = """
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Pontual Exportação e Importação</title>
+        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="produtos/css/produtos.css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+  <body>
+        <a href="index.html">Voltar</a><br>
+        <center>PONTUAL EXPORTAÇÃO E IMPORTAÇÃO</center>
+<hr>
+        <div class="site_content">
+{content}
+        </div>
+        <!-- http://jsfiddle.net/9Wg3T/3/ -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
+        <script type="text/javascript" src="js/setup_blueimp.js"></script>        
+        </body>
+</html>""".format(content=content)
     return output

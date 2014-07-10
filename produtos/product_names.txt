@@ -1,82 +1,82 @@
-137263;137263
-137350A;Chaveiro
-137350B;Chaveiro
-137350K;Chaveiro
-137350L;
-137350P;
-137350R;
-137535;
-138319P;
-138319T;
-138499A;
-138499P;
-139385P;
-139385T;
-139388;
-139454;
-139454A;
-139482H;
-139482L;
-139482M;
-139482R;
-139735;
-140045;
-140047;
-140068;
-140070;
-140078;
-140086;
-140087;
-140088;
-140117;
-140117R;
-140117S;
-140117V;
-140121;
-140125A;
-140125R;
-140125V;
-140135;
-140153B;
-140231;
-140232;
-140241;
-140274;
-140275;
-140276;
-140288;
-140303;
-140304;
-140304A;
-140304B;
-140310;
-140395;
-140399;
-140401;
-140402;
-140873A;
-140873P;
-140873S;
-140873V;
-140879;
-140884;
-140888;
-140890;
-140895;
-140897;
-140900;
-140901;
-140902A;
-140902G;
-140902T;
-140902V;
-140918;
-140919;
-140922;
-140923;
-140924;
-140926;
-140927;
+137263;Espelho de bolso duplo
+137350A;Chaveiro de metal 
+137350B;Chaveiro de metal (retangular)
+137350K;Chaveiro de metal
+137350L;Chaveiro de metal
+137350P;Chaveiro de metal (coração)
+137350R;Chaveiro de metal (redondo)
+137535;Espelho de bolso
+138319P;Kit pincéis c/ 7 pçs
+138319T;Kit pincéis c/ 7 pçs
+138499A;Bloco p/ anotação (azul)
+138499P;Bloco p/ anotação (preto)
+139385P;Jogo de pincéis c/ 5 pçs
+139385T;Jogo de pincéis c/ 5 pçs
+139388;Kit manicure c/ 6 pçs
+139454;Canivete c/ 11 funções
+139454A;Canivete c/ 11 funções
+139482H;Chaveiro de metal (retangular)
+139482L;Chaveiro de metal
+139482M;Chaveiro de metal
+139482R;Chaveiro de metal
+139735;Porta foto c/ relógio multifunção
+140045;Espelho de bolso duplo
+140047;Espelho de bolso duplo
+140068;Chaveiro c/ canivete c/ 3 funções
+140070;Chaveiro c/ canivete c/ 4 funções
+140078;Canivete c/ 7 funções
+140086;Espelho c/ base (redondo)
+140087;Espelho c/ base (quadrado)
+140088;Espelho c/ base (oval)
+140117;Kit manicure c/ 6 pçs
+140117R;Kit manicure c/ 6 pçs
+140117S;Kit manicure c/ 6 pçs
+140117V;Kit manicure c/ 6 pçs
+140121;Kit manicure c/ 6 pçs
+140125A;Kit manicure c/ 5 pçs
+140125R;Kit manicure c/ 5 pçs
+140125V;Kit manicure c/ 5 pçs
+140135;Saca rolhas de metal
+140153B;Porta cartão de metal
+140231;Porta caneta c/ relógio de metal
+140232;Porta caneta c/ relógio de metal
+140241;Espelho c/ aumento e base de alumínio
+140274;Espelho c/ aumento e base (pequeno)
+140275;Espelho c/ aumento e base (grande)
+140276;Espelho c/ aumento e base (médio)
+140288;Canivete c/ 8 funções e alicate
+140303;Chaveiro de metal bola de futebol
+140304;Chaveiro de metal jogador
+140304A;Chaveiro de metal jogador
+140304B;Chaveiro de metal jogador
+140310;Kit ferramentas c/ 25 pçs e estojo
+140395;Garrafa térmica de inox 750 ml
+140399;Necessaire c/ 5 pçs
+140401;Mousepad c/ calculadora
+140402;Mousepad c/ calculadora
+140873A;Chaveiro abridor de garrafa
+140873P;Chaveiro abridor de garrafa
+140873S;Chaveiro abridor de garrafa
+140873V;Chaveiro abridor de garrafa
+140879;Kit manicure c/ 12 pçs
+140884;Alicate multifunção p/ pescaria
+140888;Lanterna c/ relógio e bússola
+140890;Rádio c/ relógio digital de plástico
+140895;Relógio digital c/ porta foto
+140897;Rádio de plástico
+140900;Rádio de plástico
+140901;Moedor de pimenta à pilha
+140902A;Caneca plástica c/ alumínio
+140902G;Caneca plástica c/ alumínio
+140902T;Caneca plástica c/ alumínio
+140902V;Caneca plástica c/ alumínio
+140918;Calculadora de plástico
+140919;Relógio multifunção de plástico
+140922;Relógio multifunção c/ porta canetas
+140923;Relógio c/ porta foto e porta canetas
+140924;Relógio multifunção de plástico
+140926;Lupa 75mm c/ luz
+140927;Lupa 90mm c/ luz
 140943;
 140944;
 140963A;
@@ -110,7 +110,7 @@
 141175;
 141176;
 141177;
-141193;
+141193;aumento
 141200;
 141222;
 141229;

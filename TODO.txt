@@ -1,13 +1,8 @@
 - Fill in product descriptions in produtos/product_names.txt
-See if they fit in page gallery boxes
-
-- Correct CEP - 03034-080? xxxx header and mapa.html
 
 - add written directions, such as, vindo do centro - entrar na marginal, etc
 
 - Correct email (buy domain or create new gmail account)
-
-- take picture of showroom for main page
 
 - front page Carousel banners
 
