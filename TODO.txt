@@ -1,7 +1,3 @@
-- Fill in product descriptions in produtos/product_names.txt
-
-- add written directions, such as, vindo do centro - entrar na marginal, etc
-
 - Correct email (buy domain or create new gmail account)
 
 - front page Carousel banners or showroom pic
