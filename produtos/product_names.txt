@@ -188,9 +188,9 @@
 141821V;Caneca portátil plástica
 141823;Porta caneta com relógio digital
 141824;Moedor de pimenta a pilha
-141825P;
-141830;
-141834;
+141825P;Squeeze de inox 500 ml
+141830;Pincel p/ cosméticos
+141834;Chaveiro de metal
 141836;
 141837;
 141837A;

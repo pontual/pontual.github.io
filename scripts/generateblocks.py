@@ -122,7 +122,7 @@ def generate_gallery(category_id):
     codigos_file=open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/{id}.txt".format(id=category_id))
     for codigo in codigos_file:
         codigo = codigo.strip()
-        gallery += ('<li><a href="produtos/fotos/full_{codigo}.jpg" title="{desc} - {codigo}"><img src="produtos/fotos/thumb_{codigo}.jpg"><br>{codigo}<br>{desc}</a></li>\n'.
+        gallery += ('<li><a class="product_group" href="produtos/fotos/full_{codigo}.jpg" title="{desc} - {codigo}"><img src="produtos/fotos/thumb_{codigo}.jpg"><br>{codigo}<br>{desc}</a></li>\n'.
                     format(codigo=codigo, desc=product_db.get(codigo, "")))
     codigos_file.close()
     return gallery
@@ -141,10 +141,10 @@ site_header = """
   <head>
 	<meta charset="utf-8">
 	<title>Pontual Exportação e Importação</title>
-	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	<link rel="stylesheet" href="produtos/css/produtos.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/colorbox.css" type="text/css">
 <!-- Site built by Heitor Chang -->
   </head>
   <body>
@@ -224,20 +224,10 @@ def generate_category_page(category_id):
 		</div>
 	  </div>
 	</div>
-          <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-		<div class="slides"></div>
-		<h3 class="title"></h3>
-		<a class="prev">‹</a>	  
-		<a class="next">›</a>
-		<a class="close">×</a>
-		<a class="play-pause"></a>
-		<ol class="indicator"></ol>
-	  </div>
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
-	<script type="text/javascript" src="js/setup_blueimp.js"></script>
+        <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="js/setup_colorbox.js"></script>
     {footer}
     </body>
     </html>""".format(sidebar=generate_sidebar(),
@@ -272,7 +262,6 @@ def generate_custom(content):
 
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
     </html>""".format(sidebar=generate_sidebar(), content=content,
                       footer=site_footer)
@@ -299,7 +288,6 @@ def generate_index(content):
 
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/setup_slick.js"></script>
     </body>
@@ -331,9 +319,9 @@ def generate_category_page_printable(category_id):
   <head>
 	<meta charset="utf-8">
 	<title>Pontual Exportação e Importação</title>
-	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 	<link rel="stylesheet" href="produtos/css/produtos.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+    	<link rel="stylesheet" href="css/colorbox.css" type="text/css">
   </head>
   <body>
     <a href="index.html">Voltar</a><br>
@@ -352,20 +340,10 @@ def generate_category_page_printable(category_id):
 		</div>
 	  </div>
 	</div>
-          <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-		<div class="slides"></div>
-		<h3 class="title"></h3>
-		<a class="prev">‹</a>	  
-		<a class="next">›</a>
-		<a class="close">×</a>
-		<a class="play-pause"></a>
-		<ol class="indicator"></ol>
-	  </div>
 	<!-- http://jsfiddle.net/9Wg3T/3/ -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
-	<script type="text/javascript" src="js/setup_blueimp.js"></script>    
+    	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="js/setup_colorbox.js"></script>
     </body>
     </html>""".format(name=category_name,
                       gallery=generate_gallery(category_id),
@@ -378,7 +356,6 @@ def generate_custom_page_printable(content):
   <head>
         <meta charset="utf-8">
         <title>Pontual Exportação e Importação</title>
-        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
         <link rel="stylesheet" href="produtos/css/produtos.css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
@@ -391,9 +368,6 @@ def generate_custom_page_printable(content):
         </div>
         <!-- http://jsfiddle.net/9Wg3T/3/ -->
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
-        <script type="text/javascript" src="js/setup_blueimp.js"></script>        
         </body>
 </html>""".format(content=content, printable_header=printable_header)
     return output
