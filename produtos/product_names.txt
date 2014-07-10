@@ -66,10 +66,10 @@
 140897;Rádio de plástico
 140900;Rádio de plástico
 140901;Moedor de pimenta a pilha
-140902A;Caneca plástica c/ alumínio
-140902G;Caneca plástica c/ alumínio
-140902T;Caneca plástica c/ alumínio
-140902V;Caneca plástica c/ alumínio
+140902A;Caneca plástica c/ alumínio 450 ml
+140902G;Caneca plástica c/ alumínio 450 ml
+140902T;Caneca plástica c/ alumínio 450 ml
+140902V;Caneca plástica c/ alumínio 450 ml
 140918;Calculadora de plástico
 140919;Relógio multifunção de plástico
 140922;Relógio multifunção c/ porta canetas

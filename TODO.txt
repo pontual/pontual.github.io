@@ -1,3 +1,5 @@
 - Correct email (buy domain or create new gmail account)
 
 - front page Carousel banners or showroom pic
+
+- double-check descriptions, quantities and capacities
