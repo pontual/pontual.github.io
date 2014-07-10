@@ -1,6 +1,7 @@
 import os
 
 TELEFONES = "(11) 3228-1113 / 3227-4026 / 3313-7704"
+EMAIL = "contato@pontualexportacao.com.br"
 
 def generate_site():
     category_ids = []
@@ -164,7 +165,7 @@ PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
 </a>
 <span class="telefones">
 {telefones}<br>
-<a href="mailto:heitorpontual@gmail.com">contato@pontualexportacao.com.br</a>
+<a href="mailto:{email}">{email}</a>
 </span>
 <br>
 		</div>
@@ -177,7 +178,7 @@ Sao Paulo, SP, CEP 03034-080<br>
 </a>
 	  </div>
 	</div>
-""".format(telefones=TELEFONES)
+""".format(telefones=TELEFONES, email=EMAIL)
 
 site_footer = """
 <div class="back_to_top">
