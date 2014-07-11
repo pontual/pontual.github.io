@@ -29,8 +29,6 @@ def generate_site():
     index_html = open("index.html", "w")
     print(generate_index("""
 
-    <center>
-
     <div class="carousel_container">
     
       <div class="carousel">
@@ -40,7 +38,6 @@ def generate_site():
       </div>
 
     </div>
-    </center>
     
     """), file=index_html)
     index_html.close()
