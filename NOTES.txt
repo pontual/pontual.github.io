@@ -1,0 +1,17 @@
+Carousel showroom image notes
+
+> Gimp 2
+> start text at (20, 20)
+> color: #003010
+> Font: Gill Sans MT
+> Size: 50
+
+> Gradient 003010 to 006020 top to bottom on small letters
+
+> outline:
+>> right click on text layer and select "alpha to selection"
+>> Choose menu item "Select > Grow" by 3 px
+>> Create new layer "outline"
+>> Bucket fill
+>> send layer behind text
+>> Filter "Blur"
