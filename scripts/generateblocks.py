@@ -53,7 +53,7 @@ def generate_site():
 		<h3>Localização perto do Estádio do Canindé da Portuguesa</h3>
 
     <hr>
-		<b><u>Vindo da Marginal Tietê sentido Ayrton Senna:</u></b><br><br>
+		<h3>Vindo da Marginal Tietê sentido Ayrton Senna:</h3>
 		
 		Siga a Marginal até chegar ao Estádio do Canindé<br><br>
 
@@ -63,7 +63,7 @@ def generate_site():
 
 
     <hr>
-		<b><u>Vindo da Marginal Tietê sentido Castelo Branco:</u></b><br><br>
+		<h3>Vindo da Marginal Tietê sentido Castelo Branco:</h3>
 
 		Entre na Ponte Vila Guilherme para atravessar a Marginal<br><br>
 
@@ -72,6 +72,7 @@ def generate_site():
 		Passando a lombada eletrônica, vire à direita na segunda rua <b>(Iturama)</b><br><br>
 
 		Vire à esquerda na primeira rua <b>(Antônio de Andrade)</b>
+    <br><br>
 		
     
         <a href="https://www.google.com.br/maps/place/R.+Antonio+de+Andrade,+109+-+Pari/" target="_blank">
@@ -82,8 +83,9 @@ def generate_site():
 
     # generate mapa
     mapa_html = open("mapa.html", "w")
-    print(generate_custom("""
-    <div style="float:right;"><i><a href="mapa_impr.html">Página para impressão</a></i></div>
+    print(generate_custom("""<br>
+    <div style="float:left; margin-left:10px;"><i><a href="mapa_impr.html">Página para impressão</a></i></div>
+    <br>
 
     {mapa}
     
@@ -208,7 +210,7 @@ def generate_category_page(category_id):
 	  </div>
           <div class="site_content">
     <br>
-        <div style="float:right;"><i><a href="pr_{id}_impr.html">Página para impressão</a></i></div>
+        <div style="float:left; margin-left:10px;"><i><a href="pr_{id}_impr.html">Página para impressão</a></i></div>
     <br>
 		<div class="site_gallery">
 		  <span class="category_name">{name}</span>
