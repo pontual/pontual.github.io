@@ -158,7 +158,7 @@
 141742V;Squeeze de inox 500 ml
 141742W;Squeeze de inox 500 ml
 141742Y;Squeeze de inox 500 ml
-141764;Jogo de ferramentas c/ 8 pçs
+141764;Conjunto mini ferramentas de precisão
 141765;Jogo de ferramentas c/ 6 pçs e estojo
 141767C;Kit costura com estojo
 141767P;Kit costura com estojo
@@ -265,7 +265,7 @@
 143035P;Kit churrasco c/ 2 pçs
 143036;Kit churrasco c/ 4 pçs
 143037;Kit churrasco c/ 4 pçs
-143038;Caneca de inox 200 ml
+143038;Caneca de inox 180 ml
 143039A;Kit queijo c/ 4 pçs
 143040;Cantil de inox 350 ml
 143042;Porta copo de inox
@@ -407,16 +407,16 @@
 143173;Calculadora eletrônica
 143174;Calculadora eletrônica
 143175;Luz de LED p/ notebook
-143176A;Squeeze plástico dobrável
-143176B;Squeeze plástico dobrável
-143176C;Squeeze plástico dobrável
-143176G;Squeeze plástico dobrável
-143176GG;Squeeze plástico dobrável
-143176L;Squeeze plástico dobrável
-143176P;Squeeze plástico dobrável
-143176R;Squeeze plástico dobrável
-143176V;Squeeze plástico dobrável
-143176Y;Squeeze plástico dobrável
+143176A;Squeeze plástico dobrável 450 ml
+143176B;Squeeze plástico dobrável 450 ml
+143176C;Squeeze plástico dobrável 450 ml
+143176G;Squeeze plástico dobrável 450 ml
+143176GG;Squeeze plástico dobrável 450 ml
+143176L;Squeeze plástico dobrável 450 ml
+143176P;Squeeze plástico dobrável 450 ml
+143176R;Squeeze plástico dobrável 450 ml
+143176V;Squeeze plástico dobrável 450 ml
+143176Y;Squeeze plástico dobrável 450 ml
 143178;Kit queijo c/ 3 pçs
 143180;Bico dosador p/ garrafa
 143182A;Lanterna c/ jogo de ferramentas
