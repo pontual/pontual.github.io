@@ -104,8 +104,8 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: -o-linear-gradient(right bottom, #003012 75%, #00CC44 100%);
     background-image: -moz-linear-gradient(right bottom, #003012 75%, #00CC44 100%);
     background-image: -webkit-linear-gradient(right bottom, #003012 75%, #00CC44 100%);
-    background-image: -ms-linear-gradient(right bottom, #003012 75%, #00CC44 100%);
-    background-image: linear-gradient(to right bottom, #003012 75%, #00CC44 100%);
+    background-image: -ms-linear-gradient(bottom right, #003012 75%, #00CC44 100%);
+    background-image: linear-gradient(to bottom right, #003012 75%, #00CC44 100%);
 }
 
 .site_sidebar li a {
@@ -129,8 +129,8 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: -o-linear-gradient(right bottom, #70FF7A 75%, #1AAD29 100%);
     background-image: -moz-linear-gradient(right bottom, #70FF7A 75%, #1AAD29 100%);
     background-image: -webkit-linear-gradient(right bottom, #70FF7A 75%, #1AAD29 100%);
-    background-image: -ms-linear-gradient(right bottom, #70FF7A 75%, #1AAD29 100%);
-    background-image: linear-gradient(to right bottom, #70FF7A 75%, #1AAD29 100%);
+    background-image: -ms-linear-gradient(bottom right, #70FF7A 75%, #1AAD29 100%);
+    background-image: linear-gradient(to bottom right, #70FF7A 75%, #1AAD29 100%);
     color: #000000;
 }
 
