@@ -93,6 +93,7 @@ body { font-size: 12px; font-family: sans-serif; }
 }
 
 .site_sidebar li {
+    background-color: #003012;
     background-image: -webkit-gradient(
 	    linear,
 	    left top,
@@ -117,6 +118,7 @@ body { font-size: 12px; font-family: sans-serif; }
 }
 
 .site_sidebar li a:hover {
+    background-color: #70FF7A;
     background-image: -webkit-gradient(
 	    linear,
 	    left top,
