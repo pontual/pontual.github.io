@@ -59,7 +59,7 @@ def generate_site():
 
 		Passando o estádio, vire à direita na quarta rua <b>(Iturama)</b> <br><br>
 
-		Vire à esquerda na segunda rua <b>(Antônio de Andrade)</b><br><br>
+		Vire à direita na segunda rua <b>(Antônio de Andrade)</b><br><br>
 
 
     <hr>
