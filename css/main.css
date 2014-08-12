@@ -20,13 +20,13 @@ body { font-size: 12px; font-family: sans-serif; }
 	    left top,
 	    left bottom,
 	    color-stop(0.85, #FFFFFF),
-	    color-stop(1, #003012)
+	    color-stop(1, #C8102E)
     );
-    background-image: -o-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
-    background-image: -moz-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
-    background-image: -webkit-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
-    background-image: -ms-linear-gradient(bottom, #FFFFFF 85%, #003012 100%);
-    background-image: linear-gradient(to bottom, #FFFFFF 85%, #003012 100%);
+    background-image: -o-linear-gradient(bottom, #FFFFFF 85%, #C8102E 100%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 85%, #C8102E 100%);
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 85%, #C8102E 100%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 85%, #C8102E 100%);
+    background-image: linear-gradient(to bottom, #FFFFFF 85%, #C8102E 100%);
 }
 
 .site_header a {
@@ -93,6 +93,23 @@ body { font-size: 12px; font-family: sans-serif; }
 }
 
 .site_sidebar li {
+    background-color: #C8102E;
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    right bottom,
+	    color-stop(0.75, #C8102E),
+	    color-stop(1, #FFFFFF)
+    );
+    background-image: -o-linear-gradient(right bottom, #C8102E 75%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(right bottom, #C8102E 75%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(right bottom, #C8102E 75%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(top left, #C8102E 75%, #FFFFFF 100%);
+    background-image: linear-gradient(to right bottom, #C8102E 75%, #FFFFFF 100%);
+}
+
+/*
+.site_sidebar li {
     background-color: #003012;
     background-image: -webkit-gradient(
 	    linear,
@@ -107,9 +124,10 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: -ms-linear-gradient(top left, #003012 75%, #00CC44 100%);
     background-image: linear-gradient(to right bottom, #003012 75%, #00CC44 100%);
 }
+*/
 
 .site_sidebar li a {
-    color: #ccffff;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1em;
     display: block;
@@ -117,6 +135,24 @@ body { font-size: 12px; font-family: sans-serif; }
     background: inherit;
 }
 
+.site_sidebar li a:hover {
+    background-color: #FFFFFF;
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    right bottom,
+	    color-stop(0.75, #FFFFFF),
+	    color-stop(1, #C8102E)
+    );
+    background-image: -o-linear-gradient(right bottom, #FFFFFF 75%, #C8102E 100%);
+    background-image: -moz-linear-gradient(right bottom, #FFFFFF 75%, #C8102E 100%);
+    background-image: -webkit-linear-gradient(right bottom, #FFFFFF 75%, #C8102E 100%);
+    background-image: -ms-linear-gradient(top left, #FFFFFF 75%, #C8102E 100%);
+    background-image: linear-gradient(to right bottom, #FFFFFF 75%, #C8102E 100%);
+    color: #660000;
+}
+
+/*
 .site_sidebar li a:hover {
     background-color: #70FF7A;
     background-image: -webkit-gradient(
@@ -133,6 +169,7 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: linear-gradient(to right bottom, #70FF7A 75%, #1AAD29 100%);
     color: #000000;
 }
+*/
 
 .banner_company_name {
     font-size: 20px;

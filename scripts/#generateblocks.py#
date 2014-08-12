@@ -13,6 +13,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# To run:
+# 
+
 import os
 
 TELEFONES = "(11) 3228-1113 / 3227-4026 / 3313-7704"
