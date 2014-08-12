@@ -33,4 +33,4 @@ for line in categories:
 
 categories.close()
 
-print(zip_codes.difference(site_codes))
+print(sorted(zip_codes.difference(site_codes)))

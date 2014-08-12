@@ -35,3 +35,6 @@ binoculos;Binóculos
 blocos;Blocos para Anotação
 portafoto;Porta Fotos
 relogios;Relógios
+portacanetas;Porta Canetas
+garrafastermicas;Garrafas Térmicas
+coqueteleiras;Coqueteleiras

@@ -50,10 +50,13 @@
 140304A;Chaveiro de metal jogador
 140304B;Chaveiro de metal jogador
 140310;Kit ferramentas c/ 25 pçs e estojo
+140313;Coqueteleira de inox 750 ml
+140314;Coqueteleira de inox 550 ml
 140395;Garrafa térmica de inox 750 ml c/ estojo
 140399;Necessaire c/ 5 pçs
 140401;Mouse pad c/ calculadora
 140402;Mouse pad c/ calculadora
+140406;Coqueteleira de inox 350 ml
 140873A;Chaveiro abridor de garrafa
 140873P;Chaveiro abridor de garrafa
 140873S;Chaveiro abridor de garrafa
@@ -165,6 +168,7 @@
 141771;Alicate com canivete e prendedor
 141772;Kit manicure c/ 8 pçs e estojo
 141773B;Kit manicure c/ 7 pçs
+141773C;Kit manicure c/ 7 pçs
 141773P;Kit manicure c/ 7 pçs
 141773R;Kit manicure c/ 7 pçs
 141773V;Kit manicure c/ 7 pçs
