@@ -200,8 +200,8 @@ body { font-size: 12px; font-family: sans-serif; }
     height: 20px;
     width: 100%;
     bottom: 0px;
-    right: 15px;
-    text-align: right;
+    left: 7px;
+    text-align: left;
 }
 
 .back_to_top a {
