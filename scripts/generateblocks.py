@@ -115,7 +115,7 @@ def generate_site():
     # generate mapa
     mapa_html = open("mapa.html", "w")
     print(generate_custom("""<br>
-    <div style="float:left; margin-left:10px;"><i><a href="mapa_impr.html">Página para impressão</a></i></div>
+    <div style="float:right; margin-right:10px;"><i><a href="mapa_impr.html">Página para impressão</a></i></div>
     <br>
 
     {mapa}
@@ -241,7 +241,7 @@ def generate_category_page(category_id):
 	  </div>
           <div class="site_content">
     <br>
-        <div style="float:left; margin-left:10px;"><i><a href="pr_{id}_impr.html">Página para impressão</a></i></div>
+        <div style="float:right; margin-right:10px;"><i><a href="pr_{id}_impr.html">Página para impressão</a></i></div>
     <br>
 		<div class="site_gallery">
 		  <span class="category_name">{name}</span>
