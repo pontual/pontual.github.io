@@ -5,14 +5,14 @@ balancas;Balanças
 canecas;Canecas
 squeezes;Squeezes
 portacopo;Porta Copos
-kitcaneta;Kits Caneta e Chaveiro
+kitcaneta;Kits Escritório
 calculadoras;Calculadoras
 mousepads;Mouse Pads
 chaveiros;Chaveiros
 espelhos;Espelhos
 pinceis;Pincéis para Maquiagem
 pincas;Pinças
-vaporizadores;Vaporizadores de Perfume
+portaperfumes;Porta perfumes
 necessaires;Necessaires
 portabatom;Porta Batons
 portabolsa;Porta Bolsas

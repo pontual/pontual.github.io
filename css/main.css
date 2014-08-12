@@ -55,7 +55,7 @@ body { font-size: 12px; font-family: sans-serif; }
 .site_address {
     position: relative;
     float: left;
-    padding: 10px;
+    padding: 10px 10px 10px 50px;
 }
 
 .site_sidebar {
@@ -105,7 +105,7 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: -moz-linear-gradient(right bottom, #C8102E 75%, #FFFFFF 100%);
     background-image: -webkit-linear-gradient(right bottom, #C8102E 75%, #FFFFFF 100%);
     background-image: -ms-linear-gradient(top left, #C8102E 75%, #FFFFFF 100%);
-    background-image: linear-gradient(to right bottom, #C8102E 75%, #FFFFFF 100%);
+    background-image: linear-gradient(to right bottom, #C8102E 75%, #FFFFFF 100%); 
 }
 
 /*
@@ -173,7 +173,7 @@ body { font-size: 12px; font-family: sans-serif; }
 
 .banner_company_name {
     font-size: 20px;
-    color: #ff0033;
+    color: #C8102E;
     border-bottom: 1px solid #cccccc;
 }
 
@@ -227,4 +227,12 @@ body { font-size: 12px; font-family: sans-serif; }
 .printable_header {
     width: 100%;
     text-align: center;
+}
+
+.site_content a {
+    color: #C8102E;
+}
+
+.site_content a :visited {
+    color: #C8102E;
 }

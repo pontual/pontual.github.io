@@ -13,10 +13,25 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# To build:
+# F5 run-python
+# Alt-Enter 
+# type "generate_site()" into Python shell
+
+# To update:
+# Check produtos/codigos/categories.txt
+# Open produtos/codigos/{{ CATEGORY_NAME }}.txt
+# Update produtos/product_names.txt
+
+# To update photos:
+# Run compilecodigos.py
+# Run shrinkfoto.py
+# Run createthumbs.py
+
 import os
 
 TELEFONES = "(11) 3228-1113 / 3227-4026 / 3313-7704"
-# EMAIL = "contato@pontualexportacao.com.br"
+# EMAIL = "contato@pontualimportbrindes.com.br"
 EMAIL = ""
 
 def generate_site():
@@ -174,7 +189,7 @@ site_header = """
 		<div class="site_banner">
 <a href="index.html">
 <span class="banner_company_name">
-PONTUAL EXPORTAÇÃO E IMPORTAÇÃO
+PONTUAL IMPORT BRINDES
 </span><br>
 <i>Brindes e Presentes Promocionais</i><br>
 </a>
@@ -314,7 +329,7 @@ def generate_index(content):
 
 printable_header = """
 <div class="printable_header">
-<b>PONTUAL EXPORTAÇÃO E IMPORTAÇÃO</b><br>
+<b>PONTUAL IMPORT BRINDES</b><br>
 R. Antônio de Andrade, 109 - Canindé - São Paulo, SP, CEP 03034-080<br>
 {telefones}
 </div>
@@ -334,7 +349,7 @@ def generate_category_page_printable(category_id):
 <html>
   <head>
 	<meta charset="utf-8">
-	<title>Pontual Exportação e Importação</title>
+	<title>Pontual Import Brindes</title>
 	<link rel="stylesheet" href="produtos/css/produtos.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
     	<link rel="stylesheet" href="css/colorbox.css" type="text/css">
@@ -371,7 +386,7 @@ def generate_custom_page_printable(content):
 <html>
   <head>
         <meta charset="utf-8">
-        <title>Pontual Exportação e Importação</title>
+        <title>Pontual Import Brindes</title>
         <link rel="stylesheet" href="produtos/css/produtos.css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
