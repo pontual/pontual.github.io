@@ -472,3 +472,20 @@
 236145;Porta foto plástico 10x15 cm
 236154;Porta foto plástico 13x18 cm
 236155;Porta foto plástico 13x18 cm
+139547A;Chaveiro de metal
+140396;Chaveiro de metal (santos)
+141025;Chaveiro de metal
+141713;Chaveiro de metal giratório
+141780;Chaveiro de metal giratório
+141797;Chaveiro de metal giratório
+141832;Chaveiro de metal
+143019;Chaveiro de metal
+143165A;Chaveiro de metal giratório
+143165I;Chaveiro de metal giratório
+143179;Chaveiro de metal giratório
+143181;Chaveiro de metal c/ cortador de unha
+143200A;Chaveiro de metal
+143201A;Chaveiro de metal
+143208A;Chaveiro de metal
+143209A;Chaveiro de metal
+143213A;Chaveiro de metal

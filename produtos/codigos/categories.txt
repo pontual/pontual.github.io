@@ -38,3 +38,4 @@ relogios;Relógios
 portacanetas;Porta Canetas
 garrafastermicas;Garrafas Térmicas
 coqueteleiras;Coqueteleiras
+chaveirosaparecida;Chaveiros (Aparecida)
