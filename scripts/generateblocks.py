@@ -213,7 +213,7 @@ Sao Paulo, SP, CEP 03034-080<br>
 site_footer = """
 <div class="back_to_top">
 <a href="#top">
-Voltar ao topo <img src="img/uparrow.png" style="vertical-align:top;">
+Voltar ao topo <!-- <img src="img/uparrow.png" style="vertical-align:top;"> -->
 </a>
 </div>
 """
@@ -355,7 +355,7 @@ def generate_category_page_printable(category_id):
     	<link rel="stylesheet" href="css/colorbox.css" type="text/css">
   </head>
   <body>
-    <a href="index.html">Voltar</a><br>
+    <a href="pr_{id}.html">Voltar</a><br>
 {printable_header}
 <hr>
     <div class="site_content">
@@ -376,7 +376,8 @@ def generate_category_page_printable(category_id):
     	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 	<script type="text/javascript" src="js/setup_colorbox.js"></script>
     </body>
-    </html>""".format(name=category_name,
+    </html>""".format(id=category_id,
+                      name=category_name,
                       gallery=generate_gallery(category_id),
                       printable_header=printable_header)
     return output
