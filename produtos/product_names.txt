@@ -342,6 +342,8 @@
 143131;Espelho de bolso duplo
 143132A;Bloco p/ anotação c/ refil
 143132P;Bloco p/ anotação c/ refil
+143132V;Bloco p/ anotação c/ refil
+143132C;Bloco p/ anotação c/ refil
 143133;Kit churrasco c/ 6 pçs
 143134;Kit churrasco c/ 7 pçs
 143135;Kit churrasco c/ 8 pçs
