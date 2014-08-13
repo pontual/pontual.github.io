@@ -15,7 +15,7 @@ not_found = 0
 with open(SITE_CODIGOS) as cat:
     for line in cat:
         codigo = line.strip()
-        if os.path.isfile("full_" + codigo + ".jpg") and os.path.isfile("thumb_" + codigo + ".jpg"):
+        if os.path.isfile("full_" + codigo + ".jpg") and os.path.isfile("thumb_" + codigo + ".jpg") and os.path.isfile("dimen_" + codigo + ".jpg"):
             print("Found pictures for " + codigo)
             count += 1
         else:

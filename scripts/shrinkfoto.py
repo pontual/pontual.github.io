@@ -17,3 +17,4 @@ for line in codigos_file:
         except IOError:
             print("Warning: " + codigo + " not converted")
 
+codigos_file.close()
