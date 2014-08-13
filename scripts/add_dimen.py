@@ -13,7 +13,7 @@ DIMEN_DATA = "c:/Users/Heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/
 def add_dimen(codigo, dimen):
     try:
         if len(dimen) > 3:
-            dimen_string = "({DIMEN} cm)".format(DIMEN=dimen.replace("x", " x "))
+            dimen_string = "({DIMEN} cm)".format(DIMEN=dimen.replace("x", " x ").replace(".", ","))
         else:
             dimen_string = ""
         os.system('convert full_{CODIGO}.jpg -font Arial -pointsize 18 -background White label:"{CODIGO} {DIMEN_STR}" -gravity Center -append dimen_{CODIGO}.jpg'.format(CODIGO=codigo, DIMEN_STR=dimen_string));

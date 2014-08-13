@@ -22,11 +22,13 @@
 # Check produtos/codigos/categories.txt
 # Open produtos/codigos/{{ CATEGORY_NAME }}.txt
 # Update produtos/product_names.txt
+# Update produtos/product_dimen.txt
 
 # To update photos:
 # Run compilecodigos.py
 # Run shrinkfoto.py
 # Run createthumbs.py
+# Load add_dimen and run run_convert()
 
 import os
 
