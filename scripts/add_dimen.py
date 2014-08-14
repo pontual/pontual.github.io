@@ -12,11 +12,12 @@ DIMEN_DATA = "c:/Users/Heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/
 
 def add_dimen(codigo, dimen):
     try:
-        if len(dimen) > 3:
+        if len(dimen) > 2:
             dimen_string = "({DIMEN} cm)".format(DIMEN=dimen.replace("x", " x ").replace(".", ","))
         else:
             dimen_string = ""
-        if not os.path.isfile("dimen_" + codigo + ".jpg"):
+        #if not os.path.isfile("dimen_" + codigo + ".jpg"):
+        if True:
             os.system('convert full_{CODIGO}.jpg -font Arial -pointsize 18 -background White label:"{CODIGO} {DIMEN_STR}" -gravity Center -append dimen_{CODIGO}.jpg'.format(CODIGO=codigo, DIMEN_STR=dimen_string));
         else:
             print("add dimen: skipping existing file " + codigo)
@@ -25,7 +26,8 @@ def add_dimen(codigo, dimen):
 
 def add_brand(codigo):
     try:
-        if not os.path.isfile("dimen_" + codigo + ".jpg"):
+        #if not os.path.isfile("dimen_" + codigo + ".jpg"):
+        if True:
             os.system('convert dimen_{CODIGO}.jpg -font Arial -pointsize 12 -background White -fill Red label:"PONTUAL IMPORT BRINDES" -gravity SouthEast -append dimen_{CODIGO}.jpg'.format(CODIGO=codigo));
         else:
             print("add brand: skipping existing file " + codigo)
