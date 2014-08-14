@@ -42,3 +42,10 @@ def run_convert():
             add_brand(values[0])
             print(values[0])
 
+def check_dimen_len():
+    with open(DIMEN_DATA) as dimen_data:
+        for line in dimen_data:
+            values = line.split(";")
+            if len(values[1].strip()) < 4:
+                print(values[0])
+                
