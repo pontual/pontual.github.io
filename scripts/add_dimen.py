@@ -16,13 +16,19 @@ def add_dimen(codigo, dimen):
             dimen_string = "({DIMEN} cm)".format(DIMEN=dimen.replace("x", " x ").replace(".", ","))
         else:
             dimen_string = ""
-        os.system('convert full_{CODIGO}.jpg -font Arial -pointsize 18 -background White label:"{CODIGO} {DIMEN_STR}" -gravity Center -append dimen_{CODIGO}.jpg'.format(CODIGO=codigo, DIMEN_STR=dimen_string));
+        if not os.path.isfile("dimen_" + codigo + ".jpg"):
+            os.system('convert full_{CODIGO}.jpg -font Arial -pointsize 18 -background White label:"{CODIGO} {DIMEN_STR}" -gravity Center -append dimen_{CODIGO}.jpg'.format(CODIGO=codigo, DIMEN_STR=dimen_string));
+        else:
+            print("add dimen: skipping existing file " + codigo)
     except IOError:
         print("Error adding dimen");
 
 def add_brand(codigo):
     try:
-        os.system('convert dimen_{CODIGO}.jpg -font Arial -pointsize 12 -background White -fill Red label:"PONTUAL IMPORT BRINDES" -gravity SouthEast -append dimen_{CODIGO}.jpg'.format(CODIGO=codigo));
+        if not os.path.isfile("dimen_" + codigo + ".jpg"):
+            os.system('convert dimen_{CODIGO}.jpg -font Arial -pointsize 12 -background White -fill Red label:"PONTUAL IMPORT BRINDES" -gravity SouthEast -append dimen_{CODIGO}.jpg'.format(CODIGO=codigo));
+        else:
+            print("add brand: skipping existing file " + codigo)
     except IOError:
         print("Error adding brand");
 

@@ -352,6 +352,7 @@
 143134;Kit churrasco c/ 7 pçs
 143135;Kit churrasco c/ 8 pçs
 143136;Chaveiro de metal giratório
+143137;Relógio c/ porta foto e porta canetas
 143138A;Mini lanterna manual
 143138P;Mini lanterna manual
 143138S;Mini lanterna manual
