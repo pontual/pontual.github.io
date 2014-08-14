@@ -238,7 +238,7 @@
 141890P;Kit churrasco c/ 4 pçs
 141891P;Kit vinho c/ 5 pçs e estojo
 141892P;Kit vinho c/ 4 pçs e estojo
-141893;Porta foto de acrílico 10x15 cm
+141893;Porta foto de acrílico 10x14 cm
 141899;Moedor de pimenta manual
 141900;Moedor de pimenta manual
 143002A;Kit queijo c/ 3 pçs
