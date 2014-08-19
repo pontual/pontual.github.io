@@ -1,0 +1,114 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="stylesheet" href="../css/tablesorterblue/style.css" type="text/css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.tablesorter.min.js"></script>
+<title>Pontual Listas</title>
+</head>
+
+<body>
+<center>
+<a href=".."><b>Voltar</b></a><br>
+<div style="width:500px">
+<div align="right">Atualizado: 
+19/08/2014</div>
+<h2><a href="chegando.html">Clique aqui para ver a lista de produtos chegando
+em futuros containers</a></h2>
+<br><br>
+<h1>PEDIDOS DE CLIENTES AGUARDANDO CONTAINER OU DESISTENCIA</h1>
+<table id="myTable" class="tablesorter">
+  <thead>
+    <tr>
+      <th width="15%">Codigo</th>
+      <th width="35%">Numero do<br>container</th>
+      <th width="25%">Qtde. total<br>do pedido</th>
+      <th width="25%">Qtde. ja separada<br>p/ esse pedido</th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+    <tr>
+    <td>140923</td>
+    <td>Ainda sem container</td>
+    <td>1000</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>141025</td>
+    <td>Cont. 1424</td>
+    <td>4800</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>141708B</td>
+    <td>Cont. 1423</td>
+    <td>10002</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>141733A</td>
+    <td>Ainda sem container</td>
+    <td>152</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>141823</td>
+    <td>Cont. 1423</td>
+    <td>355</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>141887A</td>
+    <td>Ainda sem container</td>
+    <td>45</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143024</td>
+    <td>Cont. 1427</td>
+    <td>7200</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143121</td>
+    <td>Cont. 1425</td>
+    <td>2176</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143121</td>
+    <td>Cont. 1425</td>
+    <td>1000</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143121</td>
+    <td>Cont. 1425</td>
+    <td>501</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143151P</td>
+    <td>Ainda sem container</td>
+    <td>2550</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td>143187V</td>
+    <td>Ainda sem container</td>
+    <td>300</td>
+    <td>0</td>
+    </tr> 
+  </tbody>
+</table>
+</div>
+</center>
+
+<script>
+  $(document).ready(function() {
+    $("#myTable").tablesorter({ sortList: [[0,0]] });
+  });
+</script>
+
