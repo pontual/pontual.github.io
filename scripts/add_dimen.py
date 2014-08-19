@@ -12,7 +12,7 @@ DIMEN_DATA = "c:/Users/Heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/
 
 def add_dimen(codigo, dimen):
     try:
-        if len(dimen) > 2:
+        if len(dimen) > 0:
             dimen_string = "({DIMEN} cm)".format(DIMEN=dimen.replace("x", " x ").replace(".", ","))
         else:
             dimen_string = ""

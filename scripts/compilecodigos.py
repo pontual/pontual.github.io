@@ -22,3 +22,5 @@ codigos = sorted(list(codigos_set))
 for codigo in codigos:
     print(codigo, end='', file=codigos_file)
 
+codigos_file.close()
+    

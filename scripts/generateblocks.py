@@ -13,6 +13,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# NOTE WHEN UPDATING
+# produtos/codigos/squeezes and cantis are duplicates of the same data
+
 # To build:
 # F5 run-python
 # Alt-Enter 
@@ -155,7 +158,11 @@ def generate_gallery(category_id):
     codigos_file=open("c:/Users/heitor/Desktop/emacs-24.3/bin/pontual.github.io/produtos/codigos/{id}.txt".format(id=category_id))
     for codigo in codigos_file:
         codigo = codigo.strip()
-        gallery += ('<li><a class="product_group" href="produtos/fotos/dimen_{codigo}.jpg" title="{desc} - {codigo}"><img src="produtos/fotos/thumb_{codigo}.jpg"><br><span class="box_codigo">&nbsp;&nbsp;{codigo}&nbsp;&nbsp;</span><br>{desc}</a></li>\n'.
+        if codigo[0] == "#":
+            gallery += "<!-- {} -->\n".format(codigo)
+            print(codigo)
+        else:
+            gallery += ('<li><a class="product_group" href="produtos/fotos/dimen_{codigo}.jpg" title="{desc} - {codigo}"><img src="produtos/fotos/thumb_{codigo}.jpg"><br><span class="box_codigo">&nbsp;&nbsp;{codigo}&nbsp;&nbsp;</span><br>{desc}</a></li>\n'.
                     format(codigo=codigo, desc=product_db.get(codigo, "")))
     codigos_file.close()
     return gallery

@@ -52,7 +52,7 @@
 140310;Kit ferramentas c/ 25 pçs e estojo
 140313;Coqueteleira de inox 750 ml
 140314;Coqueteleira de inox 550 ml
-140395;Garrafa térmica de inox 750 ml c/ estojo
+140395;Cantil de inox 750 ml c/ estojo
 140399;Necessaire c/ 5 pçs
 140401;Mouse pad c/ calculadora
 140402;Mouse pad c/ calculadora
@@ -128,7 +128,7 @@
 141256;Mini rádio FM auto procura
 141263;Espelho de bolso duplo c/ aumento
 141264;Espelho de bolso duplo c/ luz
-141266;Garrafa térmica de inox 1 litro c/ estojo
+141266;Cantil de inox 1 litro c/ estojo
 141267;Moedor de pimenta de metal
 141268;Kit ferramentas c/ 8 pçs
 141275M;Kit queijo c/ 6 pçs (ímã)
@@ -148,7 +148,7 @@
 141708B;Espelho e escova de bolso
 141709;Mosquetão c/ bússola
 141716;Cantil de inox 265 ml
-141719;Garrafa térmica de inox 500 ml
+141719;Cantil de inox 500 ml c/ estojo
 141730;Saca rolhas de metal
 141733A;Kit queijo c/ 5 pçs
 141734;Kit churrasco c/ avental
@@ -435,9 +435,9 @@
 143186A;Squeeze plástico com canudo 400 ml
 143186P;Squeeze plástico com canudo 400 ml
 143186V;Squeeze plástico com canudo 400 ml
-143187A;Garrafa térmica 500 ml
-143187S;Garrafa térmica 500 ml
-143187V;Garrafa térmica 500 ml
+143187A;Cantil 500 ml
+143187S;Cantil 500 ml
+143187V;Cantil 500 ml
 143188;Espelho de bolso duplo
 143189;Espelho de bolso duplo
 143190;Kit vinho c/ 5 pçs
