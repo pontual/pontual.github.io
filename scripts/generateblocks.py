@@ -176,8 +176,7 @@ def load_product_names():
     product_name_file.close()
     return product_name_db
 
-site_header = """
-<html>
+site_header = """<html>
   <head>
 	<meta charset="utf-8">
 	<title>Pontual Import Brindes</title>
@@ -354,8 +353,7 @@ def generate_category_page_printable(category_id):
             if category_id == category_data[0]:
                 category_name = category_data[1].strip()
     categories_file.close()
-    output = """
-<html>
+    output = """<html>
   <head>
 	<meta charset="utf-8">
 	<title>Pontual Import Brindes</title>
@@ -392,8 +390,7 @@ def generate_category_page_printable(category_id):
     return output
 
 def generate_custom_page_printable(content):
-    output = """
-<html>
+    output = """<html>
   <head>
         <meta charset="utf-8">
         <title>Pontual Import Brindes</title>
