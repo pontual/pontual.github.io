@@ -289,6 +289,8 @@ def generate_custom(content):
 		<br>
 		<div class="site_footer">
 		  (C) 2014
+                  Pontual Exportação e<br>
+                  Importação Ltda.
 		</div>
 	  </div>
           <div class="site_content">
@@ -318,6 +320,8 @@ def generate_index(content):
 		<br>
 		<div class="site_footer">
 		  (C) 2014
+                  Pontual Exportação e<br>
+                  Importação Ltda.
 		</div>
 	  </div>
           <div class="site_content">
