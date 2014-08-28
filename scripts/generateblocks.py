@@ -179,7 +179,7 @@ def load_product_names():
 site_header = """<html>
   <head>
 	<meta charset="utf-8">
-	<title>Pontual Import Brindes</title>
+	<title>Pontual Import Brindes - Pontual Exportação e Importação</title>
 	<link rel="stylesheet" href="produtos/css/produtos.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
@@ -244,7 +244,9 @@ def generate_category_page(category_id):
 		</ul>
 		<br>
 		<div class="site_footer">
-		  (C) 2014
+		  (C) 2014<br>
+                  Pontual Exportação e<br>
+                  Importação Ltda.
 		</div>
 	  </div>
           <div class="site_content">
@@ -356,7 +358,7 @@ def generate_category_page_printable(category_id):
     output = """<html>
   <head>
 	<meta charset="utf-8">
-	<title>Pontual Import Brindes</title>
+	<title>Pontual Import Brindes - Pontual Exportação e Importação</title>
 	<link rel="stylesheet" href="produtos/css/produtos.css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
     	<link rel="stylesheet" href="css/colorbox.css" type="text/css">
@@ -393,7 +395,7 @@ def generate_custom_page_printable(content):
     output = """<html>
   <head>
         <meta charset="utf-8">
-        <title>Pontual Import Brindes</title>
+        <title>Pontual Import Brindes - Pontual Exportação e Importação</title>
         <link rel="stylesheet" href="produtos/css/produtos.css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
