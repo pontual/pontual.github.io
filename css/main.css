@@ -230,6 +230,10 @@ body { font-size: 12px; font-family: sans-serif; }
     text-decoration: none;
 }
 
+.printable_header a {
+    text-decoration: none;
+}
+
 .site_content a {
     color: #A90102;
 }
