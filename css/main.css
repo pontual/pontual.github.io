@@ -227,6 +227,7 @@ body { font-size: 12px; font-family: sans-serif; }
 .printable_header {
     width: 100%;
     text-align: center;
+    text-decoration: none;
 }
 
 .site_content a {

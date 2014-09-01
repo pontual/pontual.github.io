@@ -343,9 +343,11 @@ def generate_index(content):
 
 printable_header = """
 <div class="printable_header">
+<a href="index.html">
 <b>PONTUAL IMPORT BRINDES</b><br>
 R. Antônio de Andrade, 109 - Canindé - São Paulo, SP, CEP 03034-080<br>
 {telefones}
+</a>
 </div>
 """.format(telefones=TELEFONES)
     
