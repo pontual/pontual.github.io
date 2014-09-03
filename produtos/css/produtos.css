@@ -52,6 +52,7 @@ ul.products li a {
     font-size: 20px;
     font-weight: bold;
     color: #C8102E;
+    margin-left: 10px;
 }
 
 .box_codigo {
