@@ -49,6 +49,7 @@ ul.products li a {
 }
 
 .category_name {
+    margin-left: 35px;
     font-size: 20px;
     font-weight: bold;
     color: #C8102E;
