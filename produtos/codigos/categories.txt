@@ -1,41 +1,41 @@
 # skip lines starting with #
 #
 # file name;display name
+alicates;Alicates
 balancas;Balanças
-canecas;Canecas
-squeezes;Squeezes
-portacopo;Porta Copos
-kitcaneta;Kits Escritório
+binoculos;Binóculos
+blocosparaanotacao;Blocos para Anotação
 calculadoras;Calculadoras
-mousepads;Mouse Pads
+canecas;Canecas
+canivetes;Canivetes
+cantis;Cantis
+cantisparawhisky;Cantis para Whisky
 chaveiros;Chaveiros
+chaveirosnsraaparecida;Chaveiros N. Sra. Aparecida
+coqueteleiras;Coqueteleiras
 espelhos;Espelhos
-pinceis;Pincéis para Maquiagem
+ferramentas;Ferramentas
+jogos;Jogos
+kitsescritorio;Kits Escritório
+pinceisparamaquiagem;Pincéis para Maquiagem
 pincas;Pinças
 portaperfumes;Porta perfumes
 necessaires;Necessaires
-portabatom;Porta Batons
-portabolsa;Porta Bolsas
-ferramentas;Ferramentas
-canivetes;Canivetes
-alicates;Alicates
-jogos;Jogos
+portabatons;Porta Batons
+portabolsas;Porta Bolsas
+portacopos;Porta Copos
 radios;Rádios
-kitchurrasco;Kits Churrasco
-kitqueijo;Kits Queijo
-kitcozinha;Kits Cozinha
-kitvinho;Kits Vinho
-whisky;Cantis para Whisky
-kitmanicure;Kits Manicure
-kitcostura;Kits Costura
+kitschurrasco;Kits Churrasco
+kitscostura;Kits Costura
+kitscozinha;Kits Cozinha
+kitsqueijo;Kits Queijo
+kitsmanicure;Kits Manicure
+kitsvinho;Kits Vinho
 lanternas;Lanternas
 lupas;Lupas
-portacartao;Porta Cartões
-binoculos;Binóculos
-blocos;Blocos para Anotação
-portafoto;Porta Fotos
+mousepads;Mouse Pads
+portacartoes;Porta Cartões
+portafotos;Porta Fotos
 relogios;Relógios
 portacanetas;Porta Canetas
-coqueteleiras;Coqueteleiras
-chaveirosaparecida;Chaveiros N. Sra. Aparecida
-cantis;Cantis
+squeezes;Squeezes
