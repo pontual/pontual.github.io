@@ -92,6 +92,7 @@ body { font-size: 12px; font-family: sans-serif; }
     margin: 0;
 }
 
+/*
 .site_sidebar li {
     background-color: #A90102;
     background-image: -webkit-gradient(
@@ -107,8 +108,9 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: -ms-linear-gradient(top left, #A90102 75%, #FFFFFF 100%);
     background-image: linear-gradient(to right bottom, #A90102 75%, #FFFFFF 100%); 
 }
+*/
 
-/*
+
 .site_sidebar li {
     background-color: #003012;
     background-image: -webkit-gradient(
@@ -124,7 +126,7 @@ body { font-size: 12px; font-family: sans-serif; }
     background-image: -ms-linear-gradient(top left, #003012 75%, #00CC44 100%);
     background-image: linear-gradient(to right bottom, #003012 75%, #00CC44 100%);
 }
-*/
+
 
 .site_sidebar li a {
     color: #FFFFFF;

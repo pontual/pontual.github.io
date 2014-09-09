@@ -338,7 +338,7 @@
 143124;Ferramenta de inox c/ 11 funções
 143126P;Mini balança
 143127;Espelho de bolso duplo
-143128;Kit manicure c/ 6 pçs
+143128;Kit manicure c/ 5 pçs
 143129;Jogo de facas c/ 5 pçs
 143130A;Jogo de ferramentas c/ 6 pçs
 143130C;Jogo de ferramentas c/ 6 pçs
