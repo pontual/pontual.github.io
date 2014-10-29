@@ -15,3 +15,9 @@ Carousel showroom image notes
 >> Bucket fill
 >> send layer behind text
 >> Filter "Blur"
+
+
+Carousel NOVIDADE
+
+> font Fixedsys, size 20
+> for color, use eyedropper
