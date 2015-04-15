@@ -1,7 +1,7 @@
 var calcButton = document.getElementById("calcButton");
 var resetButton = document.getElementById("resetButton");
 
-var totals = {
+var billCount = {
   '50': document.getElementById("ct50"),
   '20': document.getElementById("ct20"),
   '10': document.getElementById("ct10"),
@@ -10,9 +10,19 @@ var totals = {
   '1': document.getElementById("ct1"),
 };
 
+var billTotal = {
+  '50': document.getElementById("tot50"),
+  '20': document.getElementById("tot20"),
+  '10': document.getElementById("tot10"),
+  '5': document.getElementById("tot5"),
+  '2': document.getElementById("tot2"),
+  '1': document.getElementById("tot1"),
+};
+
 calcButton.addEventListener("click", function() {
   reset();
   consumeList();
+  computeTotals();
 });
 
 resetButton.addEventListener("click", function() {
@@ -22,17 +32,20 @@ resetButton.addEventListener("click", function() {
 
 
 function reset() {
-  for (bill in totals) {
-    totals[bill].innerHTML = "0";
+  for (bill in billCount) {
+    billCount[bill].innerHTML = "0";
+    billTotal[bill].innerHTML = "0"; 
+    document.getElementById("grandTotal").innerHTML = "0";
+    document.getElementById("paymentCount").innerHTML = "0";
   }
 }
 
 function getCount(bill) {
-  return parseInt(totals[bill].innerHTML, 10);
+  return parseInt(billCount[bill].innerHTML, 10);
 }
 
 function addTo(bill, amount) {
-  totals[bill].innerHTML = getCount(bill) + amount;
+  billCount[bill].innerHTML = getCount(bill) + amount;
 }
 
 function countForPayment(payment) {
@@ -49,8 +62,29 @@ function countForPayment(payment) {
 function consumeList() {
   var paymentListStr = document.getElementById("paymentList").value;
   var paymentList = paymentListStr.split("\n");
-
-  paymentList.forEach(function(payment) {
-    countForPayment(parseInt(payment, 10));
+  var count = 0;
+  
+  paymentList.forEach(function(paymentStr) {
+    var payment = parseInt(paymentStr, 10);
+    countForPayment(payment);
+    if (payment > 0) {
+      count++;
+    }
   });
+
+  document.getElementById("paymentCount").innerHTML = count;
+}
+
+function computeTotals() {
+  var bills = [50, 20, 10, 5, 2, 1];
+  var grandTotal = 0;
+
+  bills.forEach(function(bill) {
+    var billId = bill.toString();
+    var currentBillTotal = parseInt(billCount[billId].innerHTML, 10) * bill;
+    billTotal[billId].innerHTML = currentBillTotal;
+    grandTotal += currentBillTotal;
+  });
+
+  document.getElementById("grandTotal").innerHTML = grandTotal;
 }

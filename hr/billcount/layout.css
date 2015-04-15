@@ -1,0 +1,9 @@
+.results {
+    float: left;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.container {
+    overflow: hidden;
+}
