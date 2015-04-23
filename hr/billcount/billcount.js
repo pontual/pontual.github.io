@@ -2,6 +2,7 @@ var calcButton = document.getElementById("calcButton");
 var resetButton = document.getElementById("resetButton");
 
 var billCount = {
+  '100': document.getElementById("ct100"),
   '50': document.getElementById("ct50"),
   '20': document.getElementById("ct20"),
   '10': document.getElementById("ct10"),
@@ -11,6 +12,7 @@ var billCount = {
 };
 
 var billTotal = {
+  '100': document.getElementById("tot100"),
   '50': document.getElementById("tot50"),
   '20': document.getElementById("tot20"),
   '10': document.getElementById("tot10"),
@@ -49,7 +51,7 @@ function addTo(bill, amount) {
 }
 
 function countForPayment(payment) {
-  var bills = [50, 20, 10, 5, 2, 1];
+  var bills = [100, 50, 20, 10, 5, 2, 1];
 
   bills.forEach(function(bill) {
     while (payment >= bill) {
@@ -67,7 +69,7 @@ function consumeList() {
   paymentList.forEach(function(paymentStr) {
     var payment = parseInt(paymentStr, 10);
     countForPayment(payment);
-    if (payment > 0) {
+    if (paymentStr.trim().length > 0) {
       count++;
     }
   });
@@ -76,7 +78,7 @@ function consumeList() {
 }
 
 function computeTotals() {
-  var bills = [50, 20, 10, 5, 2, 1];
+  var bills = [100, 50, 20, 10, 5, 2, 1];
   var grandTotal = 0;
 
   bills.forEach(function(bill) {
