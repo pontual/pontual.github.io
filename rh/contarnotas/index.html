@@ -7,6 +7,16 @@
   </head>
   <body>
 	<div class="container">
+	  <b>Contar Qtde. de notas</b><br>
+	  <hr>
+	  Digite os valores,<br> um por linha<br>
+	  <textarea rows="20" cols="12" id="paymentList"></textarea><br>
+	  <input type="button" id="calcButton" value="Calcular"><br><br><br>
+	  
+	  <input type="button" id="resetButton" value="Limpar">
+	</div>
+
+	<div class="container">
 	  <div class="results">
 		<!--
 		100 x <span id="ct100">0</span> = <span id="tot100">0</span><br>
@@ -78,19 +88,10 @@
 		
 		<br>
 		Total: <span id="grandTotal">0</span><br>
-		Numero de pessoas: <span id="paymentCount">0</span>
+		Número de pessoas: <span id="paymentCount">0</span>
 	  </div>
 	</div>
 	
-	<div class="container">
-	  <hr>
-	  <br>
-	  Digite os valores, um por linha<br>
-	  <textarea rows="10" id="paymentList"></textarea><br>
-	  <input type="button" id="calcButton" value="Calcular"><br><br><br>
-	  
-	  <input type="button" id="resetButton" value="Limpar">
-	</div>
 	<script src="contarnotas.js"></script>
   </body>
 </html>

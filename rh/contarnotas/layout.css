@@ -1,0 +1,11 @@
+.results {
+    float: left;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.container {
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
