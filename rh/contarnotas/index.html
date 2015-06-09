@@ -10,7 +10,7 @@
 	  <b>Contar Qtde. de notas</b><br>
 	  <hr>
 	  Digite abaixo os valores,<br> somente um por linha<br>
-	  <textarea rows="23" cols="12" id="paymentList"></textarea><br>
+	  <textarea rows="8" cols="12" id="paymentList"></textarea><br>
 	  <input type="button" id="calcButton" value="Calcular"><br><br><br>
 	  
 	  <input type="button" id="resetButton" value="Limpar">
@@ -18,16 +18,6 @@
 
 	<div class="container">
 	  <div class="results">
-		<!--
-		100 x <span id="ct100">0</span> = <span id="tot100">0</span><br>
-		50 x <span id="ct50">0</span> = <span id="tot50">0</span><br>
-		20 x <span id="ct20">0</span> = <span id="tot20">0</span><br>
-		10 x <span id="ct10">0</span> = <span id="tot10">0</span><br>
-		5 x <span id="ct5">0</span> = <span id="tot5">0</span><br>
-		2 x <span id="ct2">0</span> = <span id="tot2">0</span><br>
-		1 x <span id="ct1">0</span> = <span id="tot1">0</span><br>
-		  -->
-
 		<b>Resultado:</b><br><br>
 		
 		<table border="0" cellspacing="0" cellpadding="0">
@@ -42,45 +32,45 @@
 				</tr>
 				<tr>
 				  <td bgcolor="#FFFFCC">R$ 1</td>
-				  <td bgcolor="#FFFFCC"><span id="ct1"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="tot1"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="subtot1"></span></td>
+				  <td bgcolor="#FFFFCC"><span id="count1"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="total1"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="subtotal1"></span></td>
 				</tr>
 				<tr>
 				  <td bgcolor="#FFFFCC">R$ 2</td>
-				  <td bgcolor="#FFFFCC"><span id="ct2"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="tot2"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="subtot2"></span></td>
+				  <td bgcolor="#FFFFCC"><span id="count2"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="total2"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="subtotal2"></span></td>
 				</tr>
 				<tr>
 				  <td bgcolor="#FFFFCC">R$ 5</td>
-				  <td bgcolor="#FFFFCC"><span id="ct5"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="tot5"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="subtot5"></span></td>
+				  <td bgcolor="#FFFFCC"><span id="count5"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="total5"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="subtotal5"></span></td>
 				</tr>
 				<tr>
 				  <td bgcolor="#FFFFCC">R$ 10</td>
-				  <td bgcolor="#FFFFCC"><span id="ct10"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="tot10"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="subtot10"></span></td>
+				  <td bgcolor="#FFFFCC"><span id="count10"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="total10"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="subtotal10"></span></td>
 				</tr>
 				<tr>
 				  <td bgcolor="#FFFFCC">R$ 20</td>
-				  <td bgcolor="#FFFFCC"><span id="ct20"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="tot20"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="subtot20"></span></td>
+				  <td bgcolor="#FFFFCC"><span id="count20"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="total20"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="subtotal20"></span></td>
 				</tr>
 				<tr>
 				  <td bgcolor="#FFFFCC">R$ 50</td>
-				  <td bgcolor="#FFFFCC"><span id="ct50"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="tot50"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="subtot50"></span></td>
+				  <td bgcolor="#FFFFCC"><span id="count50"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="total50"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="subtotal50"></span></td>
 				</tr>
 				<tr>
 				  <td bgcolor="#FFFFCC">R$ 100</td>
-				  <td bgcolor="#FFFFCC"><span id="ct100"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="tot100"></span></td>
-				  <td bgcolor="#FFFFCC" align="right"><span id="subtot100"></span></td>
+				  <td bgcolor="#FFFFCC"><span id="count100"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="total100"></span></td>
+				  <td bgcolor="#FFFFCC" align="right"><span id="subtotal100"></span></td>
 				</tr>
 
 			  </table>
