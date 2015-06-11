@@ -10,6 +10,7 @@ var resetButton = document.getElementById("resetButton");
 function billElem(type, denom) {
   return document.getElementById(type + denom.toString());
 }
+
 function reset() {
   billList.forEach(function(bill) {
     billElem("count", bill).innerHTML = "0";
