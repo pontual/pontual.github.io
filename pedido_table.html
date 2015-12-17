@@ -4,9 +4,9 @@
 <table id="pedidotable">
 </table>
 
-Desc <input id="desc" value="0" size="4" onkeyup="computeFactor();"> % <br><br>
+Desc <input id="desc" value="0" size="4" onkeyup="calc();" autocomplete="off"> % <br><br>
 
-GRANDTOT   <span id="grandtot"></span>    <br><br>
+<font size="+2">GRANDTOT   <span id="grandtot"></span></font>    <br><br>
 
 
 <button type="button" onclick="calc();">Calculate</button>
@@ -93,7 +93,6 @@ GRANDTOT   <span id="grandtot"></span>    <br><br>
  function computeFactor() {
      factor = 3 * (100 - parseInt(document.getElementById("desc").value, 10));
      document.getElementById("factorlabel").innerHTML = "x" + factor;
-     calc();
  }
  
  function populateTable() {
@@ -109,6 +108,7 @@ GRANDTOT   <span id="grandtot"></span>    <br><br>
  
  function calc() {
      var grandtot = 0;
+     computeFactor();
      
      // mult by factor x3
      for (var i = 1; i <= rows; i++) {
@@ -123,7 +123,6 @@ GRANDTOT   <span id="grandtot"></span>    <br><br>
                  grandtot += parseAmount(document.getElementById("tab" + i).value) * factor * parseInt(document.getElementById("qtde" + i).value, 10);
          }
      }
-     console.log(grandtot);
      document.getElementById("grandtot").innerHTML = displayAmount(grandtot);
  }
 
@@ -135,6 +134,7 @@ GRANDTOT   <span id="grandtot"></span>    <br><br>
          document.getElementById("times" + i).value = "";
          document.getElementById("subtot" + i).value = "";
      }
+     document.getElementById("desc").value = "0";
      calc();
      document.getElementById("cod1").focus();
  }
