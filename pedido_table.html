@@ -1,0 +1,145 @@
+<div align="right">
+
+<form action="#" method="get">
+<table id="pedidotable">
+</table>
+
+Desc <input id="desc" value="0" size="4" onkeyup="computeFactor();"> % <br><br>
+
+GRANDTOT   <span id="grandtot"></span>    <br><br>
+
+
+<button type="button" onclick="calc();">Calculate</button>
+<br><br>
+<button type="button" onclick="cleartable();">Clear</button>
+
+</form>
+
+</div>
+
+
+<script>
+
+ var rows = 12;
+
+ function parseAmount(amount_str) {
+     amount_str = amount_str.replace(/,/g, ".").trim();
+
+     // separator is first character
+     if (amount_str[0] === '.') {
+         amount_str = "0" + amount_str;
+     }
+     
+     // no separator
+     if (amount_str.indexOf(".") === -1) {
+         return parseInt(amount_str) * 100;
+     }
+
+     var parts = amount_str.split(".");
+     var whole_str = parts[0];
+     var cents_str = parts[1];
+
+     if (cents_str.length > 2) {
+         cents_str = cents_str.substring(0, 2);
+     }
+
+     if (cents_str.length === 0) {
+         cents_str = cents_str + "00";
+     }
+     
+     if (cents_str.length === 1) {
+         cents_str = cents_str + "0";
+     }
+     
+     return parseInt(whole_str) * 100 + parseInt(cents_str);
+ }
+
+ function displayAmount(amount) {
+     if (isNaN(amount)) {
+         return "0.0000";
+     }
+     
+     // save sign
+     var sign = amount < 0 ? "-" : "";
+
+     var output = amount.toString();
+     
+     if (sign === "-") {
+         output = output.slice(1);
+     }
+
+     if (output.length < 2) {
+         output = "0" + output;
+     }
+
+     if (output.length < 3) {
+         output = "0" + output;
+     }
+
+     if (output.length < 4) {
+         output = "0" + output;
+     }
+
+     if (output.length < 5) {
+         output = "0" + output;
+     }
+
+     var digits = output.length;
+     return sign + output.slice(0, digits-4) + "." + output.slice(digits-4);
+ }
+
+ var factor = 300;
+ 
+ function computeFactor() {
+     factor = 3 * (100 - parseInt(document.getElementById("desc").value, 10));
+     document.getElementById("factorlabel").innerHTML = "x" + factor;
+     calc();
+ }
+ 
+ function populateTable() {
+     var tablerows = '    <tr>        <td>            Cod        </td>        <td>            Qtde        </td>        <td>            Tab        </td>        <td>            <span id="factorlabel"></span>       </td>        <td>            Subtot        </td>    </tr>';
+
+     for (var i = 1; i <= rows; i++) {
+         tablerows += '    <tr>        <td>            <input id="cod' + i + '" size="6" onkeyup="calc();">        </td>        <td>            <input id="qtde' + i + '" size="6" onkeyup="calc();">        </td>        <td>            <input id="tab' + i + '" size="4" onkeyup="calc();">        </td>        <td>            <input id="times' + i + '" size="6" disabled>        </td>        <td>            <input id="subtot' + i + '" size="6" disabled>        </td>    </tr>';
+
+     }
+     
+     document.getElementById("pedidotable").innerHTML = tablerows;
+ }
+ 
+ function calc() {
+     var grandtot = 0;
+     
+     // mult by factor x3
+     for (var i = 1; i <= rows; i++) {
+         if (document.getElementById("qtde" + i).value !== "" &&
+             document.getElementById("tab" + i).value !== "") {
+                 
+                 document.getElementById("times" + i).value = displayAmount(parseAmount(document.getElementById("tab" + i).value) * factor);
+                 
+                 // mult qtde by factor x3 
+                 document.getElementById("subtot" + i).value = displayAmount(parseAmount(document.getElementById("tab" + i).value) * factor * parseInt(document.getElementById("qtde" + i).value, 10));
+                 
+                 grandtot += parseAmount(document.getElementById("tab" + i).value) * factor * parseInt(document.getElementById("qtde" + i).value, 10);
+         }
+     }
+     console.log(grandtot);
+     document.getElementById("grandtot").innerHTML = displayAmount(grandtot);
+ }
+
+ function cleartable() {
+     for (var i = 1; i <= rows; i++) {
+         document.getElementById("cod" + i).value = "";
+         document.getElementById("qtde" + i).value = "";
+         document.getElementById("tab" + i).value = "";
+         document.getElementById("times" + i).value = "";
+         document.getElementById("subtot" + i).value = "";
+     }
+     calc();
+     document.getElementById("cod1").focus();
+ }
+
+ populateTable();
+ computeFactor();
+ document.getElementById("cod1").focus();
+</script>
