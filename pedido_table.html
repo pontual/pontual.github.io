@@ -104,10 +104,10 @@ Desc <input id="desc" value="0" size="6" onkeyup="calc();" autocomplete="off"> %
  }
  
  function populateTable() {
-     var tablerows = '    <tr>        <td>            Cod        </td>        <td>            Qtde        </td>        <td>            Tab        </td>        <td>            <span id="factorlabel"></span>       </td>        <td>            Subtot        </td>    </tr>';
+     var tablerows = '    <tr>        <td>            Prod        </td>        <td>            Qtde        </td>        <td>            Tab        </td>        <td>            <span id="factorlabel"></span>       </td>        <td>            Subtot        </td>    </tr>';
 
      for (var i = 1; i <= rows; i++) {
-         tablerows += '    <tr>        <td>            <input id="cod' + i + '" size="10" onkeyup="calc();">        </td>        <td>            <input id="qtde' + i + '" size="9" onkeyup="calc();">        </td>        <td>            <input id="tab' + i + '" size="9" onkeyup="calc();">        </td>        <td>            <input id="times' + i + '" size="14" disabled>        </td>        <td>            <input id="subtot' + i + '" size="14" disabled>        </td>    </tr>';
+         tablerows += '    <tr>        <td>            <input id="cod' + i + '" size="10" onkeyup="calc();" autocomplete="off">        </td>        <td>            <input id="qtde' + i + '" size="9" onkeyup="calc();" autocomplete="off">        </td>        <td>            <input id="tab' + i + '" size="9" onkeyup="calc();" autocomplete="off">        </td>        <td>            <input id="times' + i + '" size="14" disabled>        </td>        <td>            <input id="subtot' + i + '" size="14" disabled>        </td>    </tr>';
 
      }
      
