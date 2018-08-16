@@ -185,7 +185,7 @@ Desc <input id="desc" value="0" size="6" onkeyup="calc();" autocomplete="off"> %
  }
  
  function report() {
-   var header = "<tr><td>Num.chq</td><td>Valor</td><td>Qtde</td><td>Total</td></tr>";
+   var header = "<tr><td>Num.chq</td><td>Qtde</td><td>Valor</td><td>Total</td></tr>";
    var totalRow = "<tr><td>&nbsp;</td><td>&nbsp;</td><td><b>TOTAL:</b></td><td>R$ " + parseFloat(document.getElementById("grandtot").innerHTML).toFixed(2) + "</td></tr>"; 
    var rowsTr = "";
    for (var i = 1; i <= rows; i++) {
