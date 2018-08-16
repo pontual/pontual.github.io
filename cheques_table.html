@@ -110,19 +110,18 @@ Desc <input id="desc" value="0" size="6" onkeyup="calc();" autocomplete="off"> %
      return sign + output.slice(0, digits-4) + "." + output.slice(digits-4);
  }
 
- var factor = 300;
+ var factor = 100;
  
  function computeFactor() {
-     factor = 3 * (100 - parseInt(document.getElementById("desc").value, 10));
-     document.getElementById("factorlabel").innerHTML = "x" + factor;
+     factor = 1 * (100 - parseInt(document.getElementById("desc").value, 10));
+     document.getElementById("factorlabel").innerText = " ";
  }
  
  function populateTable() {
-     var tablerows = '    <tr>        <td>            Prod        </td>        <td>            Qtde        </td>        <td>            Tab        </td>        <td>            <span id="factorlabel"></span>       </td>        <td>            Subtot        </td>    </tr>';
+     var tablerows = '    <tr>        <td>            Num.chq        </td>        <td>            Valor        </td>        <td>            Qtde        </td>        <td>         <span id="factorlabel"></span>       </td>        <td>            Subtot        </td>    </tr>';
 
      for (var i = 1; i <= rows; i++) {
-         // tablerows += '    <tr>        <td>            <input id="cod' + i + '" size="9" onkeyup="calc();" autocomplete="off" tabindex="' + i + '">        </td>        <td>            <input id="qtde' + i + '" size="7" onkeyup="calc();" autocomplete="off" tabindex="' + (rows + i) + '">        </td>        <td>            <input id="tab' + i + '" size="6" onkeyup="calc();" autocomplete="off" tabindex="' + (2*rows + i) + '">        </td>        <td>            <input id="times' + i + '" size="10" disabled>        </td>        <td>            <input id="subtot' + i + '" size="12" disabled>        </td>    </tr>';
-         tablerows += '    <tr>        <td>            <input id="cod' + i + '" size="9" onkeyup="calc();" autocomplete="off">        </td>        <td>            <input id="qtde' + i + '" size="7" onkeyup="calc();" autocomplete="off">        </td>        <td>            <input id="tab' + i + '" size="9" onkeyup="calc();" autocomplete="off">        </td>        <td>            <input id="times' + i + '" size="12" disabled>        </td>        <td>            <input id="subtot' + i + '" size="16" disabled>        </td>    </tr>';
+         tablerows += '    <tr>        <td>            <input id="cod' + i + '" size="26" onkeyup="calc();" autocomplete="off">        </td>                <td>            <input id="tab' + i + '" size="9" onkeyup="calc();" autocomplete="off">        </td>  <td>            <input id="qtde' + i + '" size="7" onkeyup="calc();" autocomplete="off">        </td>      <td>            <input id="times' + i + '" size="12" style="display: none;">        </td>        <td>            <input id="subtot' + i + '" size="16" disabled>        </td>    </tr>';
 
      }
      
@@ -186,7 +185,7 @@ Desc <input id="desc" value="0" size="6" onkeyup="calc();" autocomplete="off"> %
  }
  
  function report() {
-   var header = "<tr><td>Código</td><td>Qtde.</td><td>Unitário</td><td>Total</td></tr>";
+   var header = "<tr><td>Num.chq</td><td>Valor</td><td>Qtde</td><td>Total</td></tr>";
    var totalRow = "<tr><td>&nbsp;</td><td>&nbsp;</td><td><b>TOTAL:</b></td><td>R$ " + parseFloat(document.getElementById("grandtot").innerHTML).toFixed(2) + "</td></tr>"; 
    var rowsTr = "";
    for (var i = 1; i <= rows; i++) {
